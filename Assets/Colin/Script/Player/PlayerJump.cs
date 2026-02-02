@@ -33,9 +33,12 @@ public class PlayerJump : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (isJumping && GetIsGrounded())
+        if (gameObject.GetComponent<PlayerMovement>().inControl)
         {
-            Jump();
+            if (isJumping && GetIsGrounded())
+            {
+                Jump();
+            }
         }
     }
     private bool GetIsGrounded()

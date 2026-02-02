@@ -1,6 +1,7 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
@@ -12,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     public float hMovement;
     [SerializeField] SpriteRenderer spriteRenderer;
     public float leftClamp;
+    public bool inControl = true;
+    public int upOrDown = 1;
+    public int deathMaxHeight;
+
 
     void Start()
     {
@@ -21,8 +26,19 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetInput();
-        Movement();
+        if (inControl)
+        {
+            GetInput();
+            Movement();
+        }
+        else
+        {
+            Death();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     void GetInput()
@@ -46,5 +62,10 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector2(leftClamp, transform.position.y);
         }
+    }
+
+    void Death()
+    {
+        if ()
     }
 }

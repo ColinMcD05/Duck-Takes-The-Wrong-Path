@@ -9,11 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9054565656941504030}
-  - component: {fileID: 7223868922466519909}
   - component: {fileID: 6680504850067125658}
-  - component: {fileID: 5374134449262557722}
   - component: {fileID: 1469236680687242057}
   - component: {fileID: 7473858131658536856}
+  - component: {fileID: 5895836147131981295}
+  - component: {fileID: 1677128865568342574}
+  - component: {fileID: 3604090725860892067}
+  - component: {fileID: 5737940259604735558}
+  - component: {fileID: 1822889647218975824}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -36,7 +39,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7223868922466519909
+--- !u!50 &6680504850067125658
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567836050910076720}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1469236680687242057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567836050910076720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c5323838f450849ae1b116af92749e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  playerRigidbody: {fileID: 6680504850067125658}
+  playerSpeed: 5
+  playerDirection: 0
+  hMovement: 0
+  spriteRenderer: {fileID: 5895836147131981295}
+  leftClamp: 0
+--- !u!114 &7473858131658536856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567836050910076720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d58e1873248650468f5a0bdc3db9497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
+  playerRigidbody: {fileID: 6680504850067125658}
+  maxHeight: 6
+  spriteRenderer: {fileID: 5895836147131981295}
+--- !u!212 &5895836147131981295
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,47 +145,34 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.78113204, g: 0.069270164, b: 0.069270164, a: 1}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -3700192600834747682, guid: c36b36f50eeec3146a214c6bde740bea, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.53, y: 1.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6680504850067125658
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!114 &1677128865568342574
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567836050910076720}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &5374134449262557722
-BoxCollider2D:
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc1df200b1eada47adaf0e5939add91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStomp
+  spriteRenderer: {fileID: 5895836147131981295}
+  playerRigidbody: {fileID: 6680504850067125658}
+--- !u!60 &3604090725860892067
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -159,15 +209,44 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.53, y: 1.25}
+    newSize: {x: 1.53, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1469236680687242057
+  m_Points:
+    m_Paths:
+    - - {x: 0.405, y: -0.53499997}
+      - {x: 0.39499998, y: -0.445}
+      - {x: 0.405, y: -0.275}
+      - {x: 0.405, y: -0.105}
+      - {x: 0.565, y: -0.065}
+      - {x: 0.765, y: 0.035}
+      - {x: 0.765, y: 0.175}
+      - {x: 0.72499996, y: 0.255}
+      - {x: 0.585, y: 0.24499999}
+      - {x: 0.575, y: 0.415}
+      - {x: 0.36499998, y: 0.555}
+      - {x: 0.074999996, y: 0.625}
+      - {x: -0.195, y: 0.625}
+      - {x: -0.205, y: 0.615}
+      - {x: -0.225, y: 0.445}
+      - {x: -0.114999995, y: 0.415}
+      - {x: -0.265, y: 0.145}
+      - {x: -0.415, y: 0.24499999}
+      - {x: -0.73499995, y: 0.275}
+      - {x: -0.765, y: 0.225}
+      - {x: -0.765, y: -0.195}
+      - {x: -0.545, y: -0.155}
+      - {x: -0.45499998, y: -0.155}
+      - {x: -0.435, y: -0.285}
+      - {x: -0.355, y: -0.33499998}
+      - {x: -0.48499998, y: -0.525}
+      - {x: -0.45499998, y: -0.625}
+      - {x: 0.405, y: -0.625}
+  m_UseDelaunayMesh: 0
+--- !u!114 &5737940259604735558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,16 +255,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 567836050910076720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36c5323838f450849ae1b116af92749e, type: 3}
+  m_Script: {fileID: 11500000, guid: e9fb08242fdc49340a9922635320ef01, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  playerRigidbody: {fileID: 6680504850067125658}
-  playerSpeed: 5
-  playerDirection: 0
-  hMovement: 0
-  spriteRenderer: {fileID: 7223868922466519909}
-  leftClamp: 0
---- !u!114 &7473858131658536856
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDeath
+  gameManager: {fileID: 0}
+--- !u!114 &1822889647218975824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,9 +268,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 567836050910076720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d58e1873248650468f5a0bdc3db9497, type: 3}
+  m_Script: {fileID: 11500000, guid: 241404a541299c941b993d87036e6720, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
-  playerRigidbody: {fileID: 6680504850067125658}
-  maxHeight: 6
-  spriteRenderer: {fileID: 7223868922466519909}
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  lives: 3
+  score: 0
+  currentPower: 0
