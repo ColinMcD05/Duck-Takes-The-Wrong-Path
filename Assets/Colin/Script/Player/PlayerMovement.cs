@@ -14,13 +14,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     public float leftClamp;
     public bool inControl = true;
-    public int upOrDown = 1;
+    public int upOrDown;
     public int deathMaxHeight;
+    public int deathCurrentHeight;
+    public float deathTimer;
+    private int deathSpeed;
 
 
     void Start()
     {
         leftClamp = (-Camera.main.orthographicSize * Camera.main.aspect) + 0.5f;
+        deathSpeed = 3;
     }
 
     // Update is called once per frame
@@ -66,6 +70,31 @@ public class PlayerMovement : MonoBehaviour
 
     void Death()
     {
-        if ()
+        if (deathTimer <= 1.5f)
+        {
+            deathTimer += Time.deltaTime;
+            if (deathTimer >= 1.5f)
+            {
+                upOrDown = 1;
+            }
+        }
+        else if ((deathTimer >= 1.5f && deathTimer < 3) || (deathTimer >= 3.25f))
+        {
+            if (deathCurrentHeight <= deathMaxHeight && upOrDown == 1)
+            {
+                deathCurrentHeight += 1;
+                if (deathCurrentHeight >= deathMaxHeight)
+                {
+                    upOrDown = -1;
+                    deathSpeed = 6;
+                    deathTimer = 3;
+                }
+            }
+            transform.Translate(Vector2.up * Time.deltaTime * deathSpeed * upOrDown);
+        }
+        else
+        {
+            deathTimer += Time.deltaTime;
+        }
     }
 }

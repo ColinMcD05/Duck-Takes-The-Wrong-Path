@@ -335,7 +335,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91da876e98053647a8fa36b80aea882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  player: {fileID: 0}
+  player: {fileID: 1737448639}
 --- !u!1001 &1980952222984689800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -534,6 +534,14 @@ PrefabInstance:
     - target: {fileID: 567836050910076720, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469236680687242057, guid: bacfc3e13870390488247abd5512d20d, type: 3}
+      propertyPath: deathMaxHeight
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895836147131981295, guid: bacfc3e13870390488247abd5512d20d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6680504850067125658, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_BodyType

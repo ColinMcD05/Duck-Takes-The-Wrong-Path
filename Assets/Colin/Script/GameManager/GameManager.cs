@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         player.GetComponent<PlayerMovement>().inControl = true;
+        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void RestartGame()
