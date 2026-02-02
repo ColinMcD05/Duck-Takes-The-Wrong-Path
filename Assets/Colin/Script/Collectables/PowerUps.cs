@@ -1,16 +1,17 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int pointValue;
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.CompareTag("Player"))
+        {
+            if (collision.GetComponent<PlayerController>().currentPower != gameObject.name)
+            {
+                collision.GetComponent<PlayerPowers>().SwitchPower(gameObject.name);
+            }
+        }
     }
 }

@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 
     public int lives = 3;
-    public int currentPower = 0;
+    public string currentPower;
+    public bool invincible;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
