@@ -4,17 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject player;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int score;
+    public int coins;
 
     public void RestartLevel()
     {
@@ -28,5 +19,20 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         player.GetComponent<PlayerController>().lives = 3;
         player.GetComponent<PlayerMovement>().inControl = true;
+    }
+
+    public void AddScore(int earnedScore)
+    {
+        score += earnedScore;
+    }
+
+    public void AddCoin(int earnedCoin)
+    {
+        coins += earnedCoin;
+        if (coins == 100)
+        {
+            player.GetComponent<PlayerController>().lives++;
+            coins = 0;
+        }
     }
 }
