@@ -458,6 +458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   player: {fileID: 1737448639}
+  score: 0
+  coins: 0
 --- !u!1001 &1980952222984689800
 PrefabInstance:
   m_ObjectHideFlags: 0
