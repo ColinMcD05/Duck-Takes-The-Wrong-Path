@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         player.GetComponent<PlayerController>().lives = 3;
+        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         player.GetComponent<PlayerMovement>().inControl = true;
     }
 

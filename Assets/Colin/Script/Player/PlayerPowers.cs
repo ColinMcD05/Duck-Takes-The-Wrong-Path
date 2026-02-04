@@ -18,6 +18,8 @@ public class PlayerPowers : MonoBehaviour
     public void Grow()
     {
         // Change Sprite and allow for water shoot to spawn in
+
+        // if press q, Quack
     }
 
     public void Shrink()
@@ -26,10 +28,12 @@ public class PlayerPowers : MonoBehaviour
         if (playerController.currentPower == "Water")
         {
             playerController.currentPower = "Grow";
+            Debug.Log(playerController.currentPower);
         }
         else if (playerController.currentPower == "Grow")
         {
             playerController.currentPower = "Small";
+            Debug.Log(playerController.currentPower);
         }
     }
 
