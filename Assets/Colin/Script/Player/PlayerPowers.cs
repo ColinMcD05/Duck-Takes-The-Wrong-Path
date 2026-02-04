@@ -3,7 +3,16 @@ using UnityEngine;
 public class PlayerPowers : MonoBehaviour
 {
     public GameObject waterBulletPrefab;
-    private int bulletDirection;
+    public int bulletDirection;
+    public int amountOfWater;
+
+    private void Update()
+    {
+        if (gameObject.GetComponent<PlayerController>().currentPower == "Water")
+        {
+            WaterPower();
+        }
+    }
 
     public void Grow()
     {
@@ -19,15 +28,16 @@ public class PlayerPowers : MonoBehaviour
     {
         if (gameObject.GetComponent<PlayerMovement>().playerDirection)
         {
-            bulletDirection = 1;
+            bulletDirection = -1;
         }
         else
         {
-            bulletDirection = -1;
+            bulletDirection = 1;
         }
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && amountOfWater < 2 )
         {
-            Instantiate(waterBulletPrefab, transform.position + new Vector3(0.5f * bulletDirection, 0.5f, 0), Quaternion.identity);
+            Instantiate(waterBulletPrefab, transform.position + new Vector3(0.65f * bulletDirection, 0.12f, 0), Quaternion.identity);
+            amountOfWater += 1;
         }
     }
 }
