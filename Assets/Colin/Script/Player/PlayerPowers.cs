@@ -5,6 +5,7 @@ public class PlayerPowers : MonoBehaviour
     public GameObject waterBulletPrefab;
     public int bulletDirection;
     public int amountOfWater;
+    [SerializeField] private PlayerController playerController;
 
     private void Update()
     {
@@ -21,7 +22,15 @@ public class PlayerPowers : MonoBehaviour
 
     public void Shrink()
     {
-        // Change Sprite to small and allow grow to spanw in
+        // Change Sprite to small and allow grow to spawn in
+        if (playerController.currentPower == "Water")
+        {
+            playerController.currentPower = "Grow";
+        }
+        else if (playerController.currentPower == "Grow")
+        {
+            playerController.currentPower = "Small";
+        }
     }
 
     void WaterPower()

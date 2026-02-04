@@ -218,6 +218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPowers
   waterBulletPrefab: {fileID: 9168095116505309704, guid: d1c05bbf86031a14bb4aca43f0311d2e, type: 3}
   bulletDirection: 0
+  amountOfWater: 0
+  playerController: {fileID: 1822889647218975824}
 --- !u!61 &3981668517935826124
 BoxCollider2D:
   m_ObjectHideFlags: 0
