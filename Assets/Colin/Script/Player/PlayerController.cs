@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public int lives = 3;
-    public string currentPower;
+    public string currentPower = "Small";
     public bool invincible;
     private GameManager gameManager;
 
@@ -21,9 +21,10 @@ public class PlayerController : MonoBehaviour
         switch (gainedPower)
         {
             case "Grow":
-                if (currentPower == "Defualt")
+                if (currentPower == "Small")
                 {
                     currentPower = "Grow";
+                    gameObject.GetComponent<PlayerPowers>().Grow();
                     Debug.Log(currentPower);
                 }
                 else
@@ -47,7 +48,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log(currentPower);
                 break;
             case null:
-                currentPower = "Defualt";
+                currentPower = "Small";
                 Debug.Log(currentPower);
                 break;
         }

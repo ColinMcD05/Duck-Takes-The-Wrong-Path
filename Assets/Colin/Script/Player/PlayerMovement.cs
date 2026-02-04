@@ -48,10 +48,12 @@ public class PlayerMovement : MonoBehaviour
     void GetInput()
     {
         hMovement = Input.GetAxis("Horizontal");
+        // Player is facing and moving right
         if (hMovement > 0)
         {
             playerDirection = false;
         }
+        // Player is facing and moving left
         else if (hMovement < 0)
         {
             playerDirection = true;

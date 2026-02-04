@@ -14,7 +14,7 @@ public class PlayerStomp : MonoBehaviour
 
     private void Start()
     {
-        playerBottom = new Vector2(transform.position.x ,transform.position.y - spriteRenderer.bounds.extents.y + 0.3f);
+        playerBottom = new Vector2(transform.position.x ,transform.position.y - spriteRenderer.bounds.extents.y - 0.3f);
     }
 
     bool Stomp()
