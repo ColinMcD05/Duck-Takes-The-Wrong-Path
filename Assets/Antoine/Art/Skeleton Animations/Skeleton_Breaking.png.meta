@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 5ec88b26278d0b5409d98330ead65c78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2044255430980667188
+    second: Skeleton_Breaking_0
+  - first:
+      213: 5886307069037685594
+    second: Skeleton_Breaking_1
+  - first:
+      213: -5274922744208671348
+    second: Skeleton_Breaking_2
+  - first:
+      213: -4242889765603042428
+    second: Skeleton_Breaking_3
+  - first:
+      213: -5321994910108324835
+    second: Skeleton_Breaking_4
+  - first:
+      213: -2901169528588916985
+    second: Skeleton_Breaking_5
+  - first:
+      213: 3700090413706520429
+    second: Skeleton_Breaking_6
+  - first:
+      213: 4948839176040944445
+    second: Skeleton_Breaking_7
+  - first:
+      213: -6466272275921628226
+    second: Skeleton_Breaking_8
+  - first:
+      213: -3963881128130227679
+    second: Skeleton_Breaking_9
+  - first:
+      213: -700986021333971570
+    second: Skeleton_Breaking_10
+  - first:
+      213: 1244329029985343770
+    second: Skeleton_Breaking_11
+  - first:
+      213: 7409084519928614462
+    second: Skeleton_Breaking_12
+  - first:
+      213: 4708041710287249819
+    second: Skeleton_Breaking_13
+  - first:
+      213: 6570738568997874600
+    second: Skeleton_Breaking_14
+  - first:
+      213: 7031677340674656988
+    second: Skeleton_Breaking_15
+  - first:
+      213: 7153850166760908205
+    second: Skeleton_Breaking_16
+  - first:
+      213: -3193651768528664292
+    second: Skeleton_Breaking_17
+  - first:
+      213: 1702277199158355091
+    second: Skeleton_Breaking_18
+  - first:
+      213: 7192405945813094691
+    second: Skeleton_Breaking_19
+  - first:
+      213: 4064825804658042321
+    second: Skeleton_Breaking_20
+  - first:
+      213: 6096265483513925160
+    second: Skeleton_Breaking_21
+  - first:
+      213: 1337240779023841975
+    second: Skeleton_Breaking_22
+  - first:
+      213: 1665200187066252919
+    second: Skeleton_Breaking_23
+  - first:
+      213: -1446959614156627828
+    second: Skeleton_Breaking_24
+  - first:
+      213: -865936365766183895
+    second: Skeleton_Breaking_25
+  - first:
+      213: -7293156875262125048
+    second: Skeleton_Breaking_26
+  - first:
+      213: 6300602766709862260
+    second: Skeleton_Breaking_27
+  - first:
+      213: -5926350199388872856
+    second: Skeleton_Breaking_28
+  - first:
+      213: -4023387798284123661
+    second: Skeleton_Breaking_29
+  - first:
+      213: 1377818372975804242
+    second: Skeleton_Breaking_30
+  - first:
+      213: -4938321485273628672
+    second: Skeleton_Breaking_31
+  - first:
+      213: 3405220315289022720
+    second: Skeleton_Breaking_32
+  - first:
+      213: 6958191817077694487
+    second: Skeleton_Breaking_33
+  - first:
+      213: 7436774345027325592
+    second: Skeleton_Breaking_34
+  - first:
+      213: 3238508212345484404
+    second: Skeleton_Breaking_35
+  - first:
+      213: -6893710732647644080
+    second: Skeleton_Breaking_36
+  - first:
+      213: -4468978326962285333
+    second: Skeleton_Breaking_37
+  - first:
+      213: -5364183570690374433
+    second: Skeleton_Breaking_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skeleton_Breaking_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43704c9cb77ae5c10800000000000000
+      internalID: 2044255430980667188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 25
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bacd0a71d50b150800000000000000
+      internalID: 5886307069037685594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 39
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d30dd36b5bbc6b0800000000000000
+      internalID: -5274922744208671348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_3
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 22
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b171cec3a3e15c0800000000000000
+      internalID: -4242889765603042428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 40
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c6e8e83d97426b0800000000000000
+      internalID: -5321994910108324835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 35
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707254f4fa9fcb7d0800000000000000
+      internalID: -2901169528588916985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_6
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 35
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d672ec990ac595330800000000000000
+      internalID: 3700090413706520429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 31
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d331572b20fcda440800000000000000
+      internalID: 4948839176040944445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_8
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 23
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb31cb4ff9f2346a0800000000000000
+      internalID: -6466272275921628226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 24
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1225ce19d177df8c0800000000000000
+      internalID: -3963881128130227679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 12
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8dcfd57de89546f0800000000000000
+      internalID: -700986021333971570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 23
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a199bf7f8aeb44110800000000000000
+      internalID: 1244329029985343770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_12
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 18
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ec039ad1b52d660800000000000000
+      internalID: 7409084519928614462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 29
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91e461cdf2565140800000000000000
+      internalID: 4708041710287249819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_14
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 15
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aba31d4ae3ff2b50800000000000000
+      internalID: 6570738568997874600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 15
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda83123949859160800000000000000
+      internalID: 7031677340674656988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 14
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5272ee2d4974360800000000000000
+      internalID: 7153850166760908205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 13
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c190d8023aedda3d0800000000000000
+      internalID: -3193651768528664292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_18
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 21
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394a415f714bf9710800000000000000
+      internalID: 1702277199158355091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 14
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321d898c91f80d360800000000000000
+      internalID: 7192405945813094691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_20
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 12
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5eb707889296830800000000000000
+      internalID: 4064825804658042321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 16
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e825968294a9450800000000000000
+      internalID: 6096265483513925160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_22
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7baf1ec4765de8210800000000000000
+      internalID: 1337240779023841975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_23
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e7ffd5fbafb1710800000000000000
+      internalID: 1665200187066252919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_24
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 11
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80abd1b5ed5bebe0800000000000000
+      internalID: -1446959614156627828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_25
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924f96896739bf3f0800000000000000
+      internalID: -865936365766183895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_26
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c9dc6767089ca90800000000000000
+      internalID: -7293156875262125048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_27
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 9
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fa59495dc307750800000000000000
+      internalID: 6300602766709862260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_28
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f5cde84ef51cda0800000000000000
+      internalID: -5926350199388872856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_29
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f142a14d1e0a28c0800000000000000
+      internalID: -4023387798284123661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_30
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fba3e928efe1310800000000000000
+      internalID: 1377818372975804242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_31
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000069306ce877bb0800000000000000
+      internalID: -4938321485273628672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_32
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 0
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001febac5d5c14f20800000000000000
+      internalID: 3405220315289022720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_33
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 0
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71022ff6796709060800000000000000
+      internalID: 6958191817077694487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e87167ddab43760800000000000000
+      internalID: 7436774345027325592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_35
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474b90f8f0e71fc20800000000000000
+      internalID: 3238508212345484404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_36
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0544d34fc9e9450a0800000000000000
+      internalID: -6893710732647644080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_37
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be45e78a3effaf1c0800000000000000
+      internalID: -4468978326962285333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_Breaking_38
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4830f86779e85b0800000000000000
+      internalID: -5364183570690374433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Skeleton_Breaking_0: 2044255430980667188
+      Skeleton_Breaking_1: 5886307069037685594
+      Skeleton_Breaking_10: -700986021333971570
+      Skeleton_Breaking_11: 1244329029985343770
+      Skeleton_Breaking_12: 7409084519928614462
+      Skeleton_Breaking_13: 4708041710287249819
+      Skeleton_Breaking_14: 6570738568997874600
+      Skeleton_Breaking_15: 7031677340674656988
+      Skeleton_Breaking_16: 7153850166760908205
+      Skeleton_Breaking_17: -3193651768528664292
+      Skeleton_Breaking_18: 1702277199158355091
+      Skeleton_Breaking_19: 7192405945813094691
+      Skeleton_Breaking_2: -5274922744208671348
+      Skeleton_Breaking_20: 4064825804658042321
+      Skeleton_Breaking_21: 6096265483513925160
+      Skeleton_Breaking_22: 1337240779023841975
+      Skeleton_Breaking_23: 1665200187066252919
+      Skeleton_Breaking_24: -1446959614156627828
+      Skeleton_Breaking_25: -865936365766183895
+      Skeleton_Breaking_26: -7293156875262125048
+      Skeleton_Breaking_27: 6300602766709862260
+      Skeleton_Breaking_28: -5926350199388872856
+      Skeleton_Breaking_29: -4023387798284123661
+      Skeleton_Breaking_3: -4242889765603042428
+      Skeleton_Breaking_30: 1377818372975804242
+      Skeleton_Breaking_31: -4938321485273628672
+      Skeleton_Breaking_32: 3405220315289022720
+      Skeleton_Breaking_33: 6958191817077694487
+      Skeleton_Breaking_34: 7436774345027325592
+      Skeleton_Breaking_35: 3238508212345484404
+      Skeleton_Breaking_36: -6893710732647644080
+      Skeleton_Breaking_37: -4468978326962285333
+      Skeleton_Breaking_38: -5364183570690374433
+      Skeleton_Breaking_4: -5321994910108324835
+      Skeleton_Breaking_5: -2901169528588916985
+      Skeleton_Breaking_6: 3700090413706520429
+      Skeleton_Breaking_7: 4948839176040944445
+      Skeleton_Breaking_8: -6466272275921628226
+      Skeleton_Breaking_9: -3963881128130227679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
