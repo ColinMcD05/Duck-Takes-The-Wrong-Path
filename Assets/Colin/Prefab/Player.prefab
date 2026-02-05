@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   lives: 3
-  currentPower: 0
+  currentPower: Small
   invincible: 0
   spriteRenderer: {fileID: 5895836147131981295}
   sprite:

@@ -6789,6 +6789,7 @@ MonoBehaviour:
   player: {fileID: 567967319}
   score: 0
   coins: 0
+  timer: 50
 --- !u!4 &1473696102
 Transform:
   m_ObjectHideFlags: 0
