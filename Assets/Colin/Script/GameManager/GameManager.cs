@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -6,7 +8,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject player;
     public int score;
     public int coins;
+    public float timer;
 
+    void Update()
+    {
+        if (player.GetComponent<PlayerMovement>().inControl)
+        {
+            LowerTime();
+        }
+    }
+    
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -18,6 +29,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         player.GetComponent<PlayerController>().lives = 3;
+        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         player.GetComponent<PlayerMovement>().inControl = true;
     }
 
@@ -33,6 +45,21 @@ public class GameManager : MonoBehaviour
         {
             player.GetComponent<PlayerController>().lives++;
             coins = 0;
+        }
+    }
+
+    void LowerTime()
+    {
+        if (timer >= 0)
+        {
+            timer -= Time.deltaTime;
+            float timeLeft = Mathf.FloorToInt(timer % 60);
+            Debug.Log(timeLeft);
+        }
+        else
+        {
+            player.GetComponent<PlayerController>().SwitchPower("");
+            player.GetComponent<PlayerDeath>().Death();
         }
     }
 }

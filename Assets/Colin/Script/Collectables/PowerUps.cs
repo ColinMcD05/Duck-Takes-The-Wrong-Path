@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
 public class PowerUps : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
@@ -8,6 +9,7 @@ public class PowerUps : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerController>().SwitchPower(gameObject.name);
+            Destroy(this.gameObject);
         }
     }
 }

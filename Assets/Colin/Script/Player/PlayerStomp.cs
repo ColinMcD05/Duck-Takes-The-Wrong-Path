@@ -14,7 +14,7 @@ public class PlayerStomp : MonoBehaviour
 
     private void Start()
     {
-        playerBottom = new Vector2(transform.position.x ,transform.position.y - spriteRenderer.bounds.extents.y + 0.3f);
+        playerBottom = new Vector2(transform.position.x ,transform.position.y - spriteRenderer.bounds.extents.y - 0.3f);
     }
 
     bool Stomp()
@@ -24,12 +24,13 @@ public class PlayerStomp : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            if (playerRigidbody.linearVelocityY <0)
+            if (playerRigidbody.linearVelocityY < -0.01)
             {
                 Destroy(collision.gameObject);
-                // Debug.Log("Destroy Object.");
+                Debug.Log("Destroy Object.");
+                Debug.Log(playerRigidbody.linearVelocityY);
             }
             else
             {

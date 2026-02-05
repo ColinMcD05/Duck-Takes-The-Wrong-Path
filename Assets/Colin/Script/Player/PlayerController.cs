@@ -6,9 +6,12 @@ public class PlayerController : MonoBehaviour
 {
 
     public int lives = 3;
-    public string currentPower;
+    public string currentPower = "Small";
     public bool invincible;
     private GameManager gameManager;
+    [SerializeField] SpriteRenderer spriteRenderer;
+    public List<Sprite> sprite;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,10 +24,12 @@ public class PlayerController : MonoBehaviour
         switch (gainedPower)
         {
             case "Grow":
-                if (currentPower == "Defualt")
+                if (currentPower == "Small")
                 {
                     currentPower = "Grow";
+                    gameObject.GetComponent<PlayerPowers>().Grow();
                     Debug.Log(currentPower);
+                    ChangeSprite(sprite[1]);
                 }
                 else
                 {
@@ -36,6 +41,7 @@ public class PlayerController : MonoBehaviour
                 {
                     currentPower = "Water";
                     Debug.Log(currentPower);
+                    ChangeSprite(sprite[2]);
                 }
                 else
                 {
@@ -47,9 +53,15 @@ public class PlayerController : MonoBehaviour
                 Debug.Log(currentPower);
                 break;
             case null:
-                currentPower = "Defualt";
+                currentPower = "Small";
+                ChangeSprite(sprite[0]);
                 Debug.Log(currentPower);
                 break;
         }
+    }
+
+    public void ChangeSprite(Sprite sprite)
+    {
+        spriteRenderer.sprite = sprite;
     }
 }

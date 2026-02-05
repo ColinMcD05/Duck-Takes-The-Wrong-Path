@@ -9,14 +9,10 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float maxHeight = 6;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
-    private float playerHalfHeight;
     private bool isJumping;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        playerHalfHeight = spriteRenderer.bounds.extents.y;
-    }
+
 
     void Update()
     {
@@ -28,6 +24,8 @@ public class PlayerJump : MonoBehaviour
         {
             isJumping = false;
         }
+        Debug.DrawRay(transform.position, Vector2.down, Color.red);
+        Debug.Log(GetIsGrounded());
     }
     
     // Update is called once per frame
@@ -43,6 +41,7 @@ public class PlayerJump : MonoBehaviour
     }
     private bool GetIsGrounded()
     {
+        float playerHalfHeight = spriteRenderer.bounds.extents.y;
         return Physics2D.Raycast(transform.position, Vector2.down, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground"));
     }
 
