@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
                 break;
             case null:
                 currentPower = "Small";
+                ChangeSprite(sprite[0]);
                 Debug.Log(currentPower);
                 break;
         }
