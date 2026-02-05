@@ -38,11 +38,11 @@ public class PlayerDeath : MonoBehaviour
 
     public void Death()
     {
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         // If player still has live, restart current level
         if (playerController.currentPower == "Small")
         {
             dead = true;
+            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
             if (playerController.lives == 0)
             {
                 playerMovement.inControl = false;

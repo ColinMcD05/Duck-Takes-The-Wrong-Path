@@ -9,6 +9,7 @@ public class PowerUps : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerController>().SwitchPower(gameObject.name);
+            Destroy(this.gameObject);
         }
     }
 }

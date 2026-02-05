@@ -26,10 +26,11 @@ public class PlayerStomp : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            if (playerRigidbody.linearVelocityY <0)
+            if (playerRigidbody.linearVelocityY < -0.01)
             {
                 Destroy(collision.gameObject);
                 Debug.Log("Destroy Object.");
+                Debug.Log(playerRigidbody.linearVelocityY);
             }
             else
             {
