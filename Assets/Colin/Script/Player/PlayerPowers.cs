@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
 public class PlayerPowers : MonoBehaviour
 {
     public GameObject waterBulletPrefab;
@@ -17,9 +18,7 @@ public class PlayerPowers : MonoBehaviour
 
     public void Grow()
     {
-        // Change Sprite and allow for water shoot to spawn in
-
-        // if press q, Quack
+        transform.localScale = new Vector3(1f, 1f, 1f);
     }
 
     public void Shrink()
@@ -28,12 +27,15 @@ public class PlayerPowers : MonoBehaviour
         if (playerController.currentPower == "Water")
         {
             playerController.currentPower = "Grow";
+            playerController.ChangeSprite(playerController.sprite[1]);
             Debug.Log(playerController.currentPower);
         }
         else if (playerController.currentPower == "Grow")
         {
             playerController.currentPower = "Small";
+            playerController.ChangeSprite(playerController.sprite[1]);
             Debug.Log(playerController.currentPower);
+            transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
         }
     }
 

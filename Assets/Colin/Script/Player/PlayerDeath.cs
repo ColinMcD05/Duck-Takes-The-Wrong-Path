@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
@@ -25,20 +27,28 @@ public class PlayerDeath : MonoBehaviour
         playerController = gameObject.GetComponent<PlayerController>();
         playerMovement = gameObject.GetComponent<PlayerMovement>();
     }
-    
+
+    private void Update()
+    {
+        if (dead)
+        {
+            DeathMovement();
+        }
+    }
+
     public void Death()
     {
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-        playerController.lives -= 1;
         // If player still has live, restart current level
         if (playerController.currentPower == "Small")
         {
-            DeathMovement();
+            dead = true;
             if (playerController.lives == 0)
             {
                 playerMovement.inControl = false;
-                gameManager.Invoke("RestartGame()", 4f);
+                gameManager.Invoke("RestartGame", 4f);
                 Debug.Log(playerController.lives);
+                playerController.lives -= 1;
             }
             // Else, restart the game
             else

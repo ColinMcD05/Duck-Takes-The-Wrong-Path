@@ -35,8 +35,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -86,8 +86,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -6524517629087480824, guid: 9af6a600c54297c4999945fd63c025a5, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -3700192600834747682, guid: 745bbd5fb026aa34d9da70390c79d19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,7 +114,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9a3f0a0793bdcc645b106863c9878c18, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -123,8 +123,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!114 &1822889647218975824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +140,11 @@ MonoBehaviour:
   lives: 3
   currentPower: 0
   invincible: 0
+  spriteRenderer: {fileID: 5895836147131981295}
+  sprite:
+  - {fileID: -3700192600834747682, guid: 745bbd5fb026aa34d9da70390c79d19a, type: 3}
+  - {fileID: -6524517629087480824, guid: 9af6a600c54297c4999945fd63c025a5, type: 3}
+  - {fileID: 5206443494592685670, guid: 028e00bb372525444809640ea4c8ba80, type: 3}
 --- !u!114 &1469236680687242057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,10 +164,6 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5895836147131981295}
   leftClamp: 0
   inControl: 1
-  upOrDown: 0
-  deathMaxHeight: 0
-  deathCurrentHeight: 0
-  deathTimer: 0
 --- !u!114 &7473858131658536856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9fb08242fdc49340a9922635320ef01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDeath
+  deathMaxHeight: 60
+  deathCurrentHeight: 0
+  deathTimer: 0
+  upOrDown: 0
 --- !u!114 &1687637528871428642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,15 +259,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.028253868, y: 0}
+  m_Offset: {x: -0.028253853, y: -0.004368931}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.45, y: 1.25}
+    oldSize: {x: 1.53, y: 1.25}
     newSize: {x: 1.45, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.82841384, y: 1.25}
+  m_Size: {x: 0.82841384, y: 1.2587378}
   m_EdgeRadius: 0

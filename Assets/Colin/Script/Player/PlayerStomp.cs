@@ -29,7 +29,7 @@ public class PlayerStomp : MonoBehaviour
             if (playerRigidbody.linearVelocityY <0)
             {
                 Destroy(collision.gameObject);
-                // Debug.Log("Destroy Object.");
+                Debug.Log("Destroy Object.");
             }
             else
             {
