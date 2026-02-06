@@ -7,19 +7,17 @@ public class PlayerBlocks : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Rigidbody2D playerRigidbody;
     [SerializeField] PlayerController playerController;
-
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (HittingBlock() && playerRigidbody.linearVelocity.y > 0)
+        ChestCrate chest = collision.gameObject.GetComponent<ChestCrate>();
+        if (HittingBlock() && playerRigidbody.linearVelocityY == 0 && chest != null)
         {
-            if (playerController.currentPower != "Small")
+            Debug.Log("Hit block");
+            chest.move = true;
+            if (playerController.currentPower != "Small" || collision.gameObject.CompareTag("Chest"))
             {
-                // Move block up and then back down, do not destroy
-                collision.gameObject.GetComponent<ChestCrate>().MoveChest();
-            }
-            else
-            {
-
+                chest.SpawnItem();
             }
         }
     }
@@ -27,6 +25,7 @@ public class PlayerBlocks : MonoBehaviour
     private bool HittingBlock()
     {
         float playerHalfHeight = spriteRenderer.bounds.extents.y;
-        return Physics2D.Raycast(transform.position, Vector2.up, playerHalfHeight + 0.01f, LayerMask.GetMask("Ground"));
+        Debug.Log(playerRigidbody.linearVelocityY);
+        return Physics2D.Raycast(transform.position, Vector2.up, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground"));
     }
 }

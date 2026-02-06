@@ -285,3 +285,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBlocks
   spriteRenderer: {fileID: 5895836147131981295}
+  playerRigidbody: {fileID: 6680504850067125658}
+  playerController: {fileID: 1822889647218975824}

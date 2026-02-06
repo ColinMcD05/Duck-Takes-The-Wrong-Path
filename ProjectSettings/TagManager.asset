@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Skeleton
   - Wall
+  - Water
+  - Grow
+  - Chest
   layers:
   - Default
   - TransparentFX
