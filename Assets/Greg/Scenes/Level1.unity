@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 67128347}
   - component: {fileID: 67128349}
   - component: {fileID: 67128348}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (5)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 139958154}
   - component: {fileID: 139958156}
   - component: {fileID: 139958155}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (21)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 345392065}
   - component: {fileID: 345392067}
   - component: {fileID: 345392066}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (20)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 390017653}
   - component: {fileID: 390017655}
   - component: {fileID: 390017654}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (18)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -2255,7 +2255,7 @@ GameObject:
   - component: {fileID: 610763053}
   - component: {fileID: 610763055}
   - component: {fileID: 610763054}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (31)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -2827,7 +2827,7 @@ GameObject:
   - component: {fileID: 828491889}
   - component: {fileID: 828491891}
   - component: {fileID: 828491890}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (19)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -3102,7 +3102,7 @@ GameObject:
   - component: {fileID: 841605798}
   - component: {fileID: 841605800}
   - component: {fileID: 841605799}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (13)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -3239,7 +3239,7 @@ GameObject:
   - component: {fileID: 863342683}
   - component: {fileID: 863342685}
   - component: {fileID: 863342684}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (24)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -3376,7 +3376,7 @@ GameObject:
   - component: {fileID: 876997019}
   - component: {fileID: 876997018}
   - component: {fileID: 876997020}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -3788,7 +3788,7 @@ GameObject:
   - component: {fileID: 925741221}
   - component: {fileID: 925741223}
   - component: {fileID: 925741222}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (25)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -4062,7 +4062,7 @@ GameObject:
   - component: {fileID: 968276175}
   - component: {fileID: 968276177}
   - component: {fileID: 968276176}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (32)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -4351,7 +4351,7 @@ GameObject:
   - component: {fileID: 1006512597}
   - component: {fileID: 1006512599}
   - component: {fileID: 1006512598}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (30)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -4488,7 +4488,7 @@ GameObject:
   - component: {fileID: 1037322831}
   - component: {fileID: 1037322833}
   - component: {fileID: 1037322832}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (26)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -4625,7 +4625,7 @@ GameObject:
   - component: {fileID: 1059094520}
   - component: {fileID: 1059094522}
   - component: {fileID: 1059094521}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (12)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -4831,7 +4831,7 @@ GameObject:
   - component: {fileID: 1088186543}
   - component: {fileID: 1088186545}
   - component: {fileID: 1088186544}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (7)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -5247,7 +5247,7 @@ GameObject:
   - component: {fileID: 1147188480}
   - component: {fileID: 1147188482}
   - component: {fileID: 1147188481}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (28)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -5551,7 +5551,7 @@ GameObject:
   - component: {fileID: 1209519162}
   - component: {fileID: 1209519164}
   - component: {fileID: 1209519163}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (3)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -6053,7 +6053,7 @@ GameObject:
   - component: {fileID: 1260743776}
   - component: {fileID: 1260743778}
   - component: {fileID: 1260743777}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (9)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -6364,7 +6364,7 @@ GameObject:
   - component: {fileID: 1305285626}
   - component: {fileID: 1305285628}
   - component: {fileID: 1305285627}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (22)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -6501,7 +6501,7 @@ GameObject:
   - component: {fileID: 1305610725}
   - component: {fileID: 1305610727}
   - component: {fileID: 1305610726}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (15)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -6775,7 +6775,7 @@ GameObject:
   - component: {fileID: 1312640093}
   - component: {fileID: 1312640095}
   - component: {fileID: 1312640094}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (10)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -7140,7 +7140,7 @@ GameObject:
   - component: {fileID: 1465467559}
   - component: {fileID: 1465467561}
   - component: {fileID: 1465467560}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (27)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -7378,7 +7378,7 @@ GameObject:
   - component: {fileID: 1604575419}
   - component: {fileID: 1604575421}
   - component: {fileID: 1604575420}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (17)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -7605,7 +7605,7 @@ GameObject:
   - component: {fileID: 1658899679}
   - component: {fileID: 1658899681}
   - component: {fileID: 1658899680}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (11)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -7742,7 +7742,7 @@ GameObject:
   - component: {fileID: 1688703814}
   - component: {fileID: 1688703816}
   - component: {fileID: 1688703815}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (6)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -7879,7 +7879,7 @@ GameObject:
   - component: {fileID: 1717522508}
   - component: {fileID: 1717522510}
   - component: {fileID: 1717522509}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (23)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -8093,7 +8093,7 @@ GameObject:
   - component: {fileID: 1798131947}
   - component: {fileID: 1798131949}
   - component: {fileID: 1798131948}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (4)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -8367,7 +8367,7 @@ GameObject:
   - component: {fileID: 1805206116}
   - component: {fileID: 1805206115}
   - component: {fileID: 1805206117}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (2)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -8504,7 +8504,7 @@ GameObject:
   - component: {fileID: 1811730201}
   - component: {fileID: 1811730203}
   - component: {fileID: 1811730202}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (16)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -9006,7 +9006,7 @@ GameObject:
   - component: {fileID: 1917811303}
   - component: {fileID: 1917811305}
   - component: {fileID: 1917811304}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (14)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -9143,7 +9143,7 @@ GameObject:
   - component: {fileID: 1924382271}
   - component: {fileID: 1924382273}
   - component: {fileID: 1924382272}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (8)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -9362,7 +9362,7 @@ GameObject:
   - component: {fileID: 2016427132}
   - component: {fileID: 2016427134}
   - component: {fileID: 2016427133}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (33)
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -9499,7 +9499,7 @@ GameObject:
   - component: {fileID: 2017497486}
   - component: {fileID: 2017497485}
   - component: {fileID: 2017497487}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9641,7 +9641,7 @@ GameObject:
   - component: {fileID: 2095528144}
   - component: {fileID: 2095528146}
   - component: {fileID: 2095528145}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Crates (29)
   m_TagString: Crate
   m_Icon: {fileID: 0}
