@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         {
             timer -= Time.deltaTime;
             float timeLeft = Mathf.FloorToInt(timer % 60);
-            Debug.Log(timeLeft);
+            //Debug.Log(timeLeft);
         }
         else
         {
