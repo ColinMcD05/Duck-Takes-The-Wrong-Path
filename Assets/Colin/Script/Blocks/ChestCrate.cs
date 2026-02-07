@@ -41,16 +41,19 @@ public class ChestCrate : MonoBehaviour
             {
                 if (playerCurrentPower == "Small")
                 {
-                    Instantiate(wormPrefab, transform.position, Quaternion.identity);
+                    GameObject powerup = Instantiate(wormPrefab, transform.position, Quaternion.identity);
+                    powerup.GetComponent<PowerUps>().goingUp = true;
                 }
                 else
                 {
-                    Instantiate(waterPrefab, transform.position, Quaternion.identity);
+                    GameObject powerup = Instantiate(waterPrefab, transform.position, Quaternion.identity);
+                    powerup.GetComponent<PowerUps>().goingUp = true;
                 }
             }
             else if (itemType == "Coin")
             {
-                Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                GameObject coinSpawned = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                coinSpawned.GetComponent<Coins>().fromCrate = true;
             }
             else
             {
