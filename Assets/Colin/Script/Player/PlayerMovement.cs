@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField] Rigidbody2D playerRigidbody;
+    [SerializeField] public Rigidbody2D playerRigidbody;
     public float playerSpeed;
     public bool playerDirection = false;
     public float hMovement;
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        leftClamp = (-Camera.main.orthographicSize * Camera.main.aspect) + 0.5f - Camera.main.transform.position.x;
+        leftClamp = (-Camera.main.orthographicSize * Camera.main.aspect) + 0.5f + Camera.main.transform.position.x;
     }
 
     void Update()
