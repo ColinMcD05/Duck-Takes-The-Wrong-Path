@@ -18,9 +18,9 @@ public class CameraController : MonoBehaviour
         {
             if (player.transform.position.x >= center)
             {
-                transform.position = new Vector2(player.transform.position.x - 0.5f,0);
+                transform.position += new Vector3(player.GetComponent<PlayerMovement>().hMovement, 0f) * Time.deltaTime * (player.GetComponent<PlayerMovement>().playerSpeed);
                 player.GetComponent<PlayerMovement>().leftClamp += player.GetComponent<PlayerMovement>().hMovement * Time.deltaTime * player.GetComponent<PlayerMovement>().playerSpeed;
-                center = player.transform.position.x - 0.5f;
+                center += player.GetComponent<PlayerMovement>().hMovement * Time.deltaTime * player.GetComponent<PlayerMovement>().playerSpeed;
             }
             else if (player.transform.position.x > (center - 2) && player.transform.position.x < center)
             {
