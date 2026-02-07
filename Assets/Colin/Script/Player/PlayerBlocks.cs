@@ -25,7 +25,15 @@ public class PlayerBlocks : MonoBehaviour
     private bool HittingBlock()
     {
         float playerHalfHeight = spriteRenderer.bounds.extents.y;
+        float playerHalfWidth = spriteRenderer.bounds.extents.x;
         Debug.Log(playerRigidbody.linearVelocityY);
-        return Physics2D.Raycast(transform.position, Vector2.up, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground"));
+        if (Physics2D.Raycast(transform.position, Vector2.up, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")) || Physics2D.Raycast(transform.position - new Vector3(playerHalfWidth,0,0), Vector2.up, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")) || Physics2D.Raycast(transform.position + new Vector3(playerHalfWidth,0,0), Vector2.up, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

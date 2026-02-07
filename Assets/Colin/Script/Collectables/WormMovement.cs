@@ -4,6 +4,7 @@ public class WormMovement : MonoBehaviour
 {
     [SerializeField] PowerUps powerUps;
     [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] Rigidbody2D wormRigidbody;
     public float speed;
     private int wormDirection;
 

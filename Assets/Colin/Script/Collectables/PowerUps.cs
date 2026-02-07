@@ -8,10 +8,10 @@ public class PowerUps : MonoBehaviour
     private float maxHeight;
     private float currentHeight;
     public bool goingUp;
-
+    [SerializeField] Rigidbody2D powerUpRigidbody;
     void Awake()
     {
-        maxHeight = 0.5f;
+        maxHeight = 1f;
     }
 
     void Update()
@@ -41,6 +41,7 @@ public class PowerUps : MonoBehaviour
         else
         {
             goingUp = false;
+            powerUpRigidbody.bodyType = RigidbodyType2D.Dynamic;
         }
     }
 }

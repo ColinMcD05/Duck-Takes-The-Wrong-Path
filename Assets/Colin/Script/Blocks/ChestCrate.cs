@@ -1,4 +1,6 @@
+using NUnit.Framework;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ChestCrate : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class ChestCrate : MonoBehaviour
     [SerializeField] GameObject wormPrefab;
     [SerializeField] GameObject waterPrefab;
     [SerializeField] GameObject coinPrefab;
+    [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] List<Sprite> chestSprites;
 
     void Start()
     {
@@ -61,6 +65,7 @@ public class ChestCrate : MonoBehaviour
             }
         }
         empty = true;
+        spriteRenderer.sprite = chestSprites[0];
     }
 
     public void Move()

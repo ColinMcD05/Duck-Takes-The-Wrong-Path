@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
         leftClamp = (-Camera.main.orthographicSize * Camera.main.aspect) + 0.5f - Camera.main.transform.position.x;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (inControl)
@@ -53,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
-        transform.Translate(new Vector2(hMovement, 0f) *Time.deltaTime * playerSpeed);
+        playerRigidbody.position += new Vector2(hMovement, 0f) * Time.deltaTime * playerSpeed;
         spriteRenderer.flipX = playerDirection;
         if (transform.position.x <= leftClamp)
         {

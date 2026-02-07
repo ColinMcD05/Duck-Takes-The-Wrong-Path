@@ -24,8 +24,8 @@ public class PlayerJump : MonoBehaviour
         {
             isJumping = false;
         }
-        Debug.DrawRay(transform.position, Vector2.down, Color.red);
-        Debug.Log(GetIsGrounded());
+        // Debug.DrawRay(transform.position, Vector2.down, Color.red);
+        // Debug.Log(GetIsGrounded());
     }
     
     // Update is called once per frame
