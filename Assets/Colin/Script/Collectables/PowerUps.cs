@@ -4,12 +4,43 @@ using System.Collections;
 using System.Collections.Generic;
 public class PowerUps : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D collision)
+
+    private float maxHeight;
+    private float currentHeight;
+    public bool goingUp;
+
+    void Awake()
     {
-        if (collision.CompareTag("Player"))
+        maxHeight = 0.5f;
+    }
+
+    void Update()
+    {
+        if (goingUp)
         {
-            collision.GetComponent<PlayerController>().SwitchPower(gameObject.name);
+            MoveUp();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerController>().SwitchPower(gameObject.tag);
             Destroy(this.gameObject);
+        }
+    }
+
+    void MoveUp()
+    {
+        if (currentHeight <= maxHeight)
+        {
+            transform.Translate(Vector2.up * Time.deltaTime * 2);
+            currentHeight += Time.deltaTime * 2;
+        }
+        else
+        {
+            goingUp = false;
         }
     }
 }
