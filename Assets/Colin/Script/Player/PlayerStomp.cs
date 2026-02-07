@@ -34,7 +34,14 @@ public class PlayerStomp : MonoBehaviour
             }
             else
             {
-                gameObject.GetComponent<PlayerDeath>().Death();
+                if (gameObject.GetComponent<PlayerController>().invincible)
+                {
+                    Destroy(collision.gameObject);
+                }
+                else
+                {
+                    gameObject.GetComponent<PlayerDeath>().Death();
+                }
             }
         }
     }

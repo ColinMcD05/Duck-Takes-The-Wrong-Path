@@ -6,6 +6,7 @@ public class PlayerPowers : MonoBehaviour
     public GameObject waterBulletPrefab;
     public int bulletDirection;
     public int amountOfWater;
+    public float invincibleTimer;
     [SerializeField] private PlayerController playerController;
 
     private void Update()
@@ -13,7 +14,7 @@ public class PlayerPowers : MonoBehaviour
         if (gameObject.GetComponent<PlayerController>().currentPower == "Water")
         {
             WaterPower();
-        }
+        }  
     }
 
     public void Grow()
@@ -54,5 +55,10 @@ public class PlayerPowers : MonoBehaviour
             Instantiate(waterBulletPrefab, transform.position + new Vector3(0.65f * bulletDirection, 0.12f, 0), Quaternion.identity);
             amountOfWater += 1;
         }
+    }
+
+    public void Invincible()
+    {
+        playerController.invincible = false;
     }
 }

@@ -336,6 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   player: {fileID: 550991495}
+  cameraRigidbody: {fileID: 106011284}
 --- !u!50 &106011284
 Rigidbody2D:
   serializedVersion: 5

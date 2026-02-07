@@ -49,7 +49,8 @@ public class PlayerController : MonoBehaviour
                 }
                 break;
             case "Invincible":
-                invincible = true;
+                gameObject.GetComponent<PlayerController>().invincible = true;
+                gameObject.GetComponent<PlayerPowers>().Invoke("Invincible", 10f);
                 Debug.Log(currentPower);
                 break;
             case null:
