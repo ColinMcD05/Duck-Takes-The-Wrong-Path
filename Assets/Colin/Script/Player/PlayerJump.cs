@@ -8,6 +8,7 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private Rigidbody2D playerRigidbody;
     [SerializeField] private float maxHeight = 6;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] Animator playerAnimator;
 
     private bool isJumping;
 
@@ -26,6 +27,7 @@ public class PlayerJump : MonoBehaviour
         }
         // Debug.DrawRay(transform.position, Vector2.down, Color.red);
         // Debug.Log(GetIsGrounded());
+        playerAnimator.SetBool("IsGrounded", GetIsGrounded());
     }
     
     // Update is called once per frame
@@ -35,6 +37,7 @@ public class PlayerJump : MonoBehaviour
         {
             if (isJumping && GetIsGrounded())
             {
+
                 Jump();
             }
         }

@@ -10,6 +10,9 @@ TagManager:
   - Wall
   - Chest
   - Crate
+  - Grow
+  - Water
+  - Invincible
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - Ground
   - Enemy
   - Breakables
-  - 
+  - PowerUps
   - 
   - 
   - 

@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: f9aeb346423c02c459e83d281d8cb6fb
+guid: df5eb12a68617134786c9426a1d72453
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6492802975334349929
-    second: Duckling_Idle_0
+      213: -4513125721815349422
+    second: Duck_Jumping_0
   - first:
-      213: -4656600808741523471
-    second: Duckling_Idle_1
+      213: -7342795131772885974
+    second: Duck_Jumping_1
   - first:
-      213: -8323428161202754144
-    second: Duckling_Idle_2
+      213: -8004989783066947756
+    second: Duck_Jumping_2
   - first:
-      213: 6165659123163063597
-    second: Duckling_Idle_3
+      213: -3790524632809783836
+    second: Duck_Jumping_3
   - first:
-      213: -9014084301007120123
-    second: Duckling_Idle_4
+      213: -4926098825578385920
+    second: Duck_Jumping_4
   - first:
-      213: -7946176145519142174
-    second: Duckling_Idle_5
+      213: 1488068053459001230
+    second: Duck_Jumping_5
+  - first:
+      213: 8566265192729644796
+    second: Duck_Jumping_6
+  - first:
+      213: 3709455180917330303
+    second: Duck_Jumping_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Duckling_Idle_0
+      name: Duck_Jumping_5
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 155
-        height: 127
+        x: 600
+        y: 15
+        width: 115
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 793c892281ee4e5a0800000000000000
-      internalID: -6492802975334349929
+      spriteID: e8fd700b20ea6a410800000000000000
+      internalID: 1488068053459001230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duckling_Idle_1
+      name: Duck_Jumping_6
       rect:
         serializedVersion: 2
-        x: 162
-        y: 4
-        width: 155
-        height: 127
+        x: 719
+        y: 7
+        width: 115
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ff2a267c3e606fb0800000000000000
-      internalID: -4656600808741523471
+      spriteID: cfe81788ecc71e670800000000000000
+      internalID: 8566265192729644796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duckling_Idle_2
+      name: Duck_Jumping_7
       rect:
         serializedVersion: 2
-        x: 320
+        x: 837
         y: 4
-        width: 155
-        height: 123
+        width: 115
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,74 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ade602df2e3d7c80800000000000000
-      internalID: -8323428161202754144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duckling_Idle_3
-      rect:
-        serializedVersion: 2
-        x: 478
-        y: 4
-        width: 155
-        height: 123
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d25e7423e42d09550800000000000000
-      internalID: 6165659123163063597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duckling_Idle_4
-      rect:
-        serializedVersion: 2
-        x: 636
-        y: 2
-        width: 155
-        height: 127
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5099b0f361a87e280800000000000000
-      internalID: -9014084301007120123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duckling_Idle_5
-      rect:
-        serializedVersion: 2
-        x: 794
-        y: 4
-        width: 155
-        height: 127
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ea16a375e289b190800000000000000
-      internalID: -7946176145519142174
+      spriteID: f715fc065d1aa7330800000000000000
+      internalID: 3709455180917330303
       vertices: []
       indices: 
       edges: []
@@ -250,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3c682ad159f501f4d95f95645c283c31
+    spriteID: 5968b3485285ce545845b22bf38836a6
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +200,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Duckling_Idle_0: -6492802975334349929
-      Duckling_Idle_1: -4656600808741523471
-      Duckling_Idle_2: -8323428161202754144
-      Duckling_Idle_3: 6165659123163063597
-      Duckling_Idle_4: -9014084301007120123
-      Duckling_Idle_5: -7946176145519142174
+      Duck_Jumping_0: -4513125721815349422
+      Duck_Jumping_1: -7342795131772885974
+      Duck_Jumping_2: -8004989783066947756
+      Duck_Jumping_3: -3790524632809783836
+      Duck_Jumping_4: -4926098825578385920
+      Duck_Jumping_5: 1488068053459001230
+      Duck_Jumping_6: 8566265192729644796
+      Duck_Jumping_7: 3709455180917330303
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

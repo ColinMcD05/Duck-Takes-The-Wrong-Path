@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     public float leftClamp;
     public bool inControl = true;
-
+    [SerializeField] Animator playerAnimator;
 
     void Start()
     {
@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
     void GetInput()
     {
+        bool isWalking;
         hMovement = Input.GetAxis("Horizontal");
         // Player is facing and moving right
         if (hMovement > 0)
@@ -48,6 +49,15 @@ public class PlayerMovement : MonoBehaviour
         {
             playerDirection = true;
         }
+        if (hMovement !=0)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
+        playerAnimator.SetBool("IsWalking", isWalking);
     }
 
     void Movement()
@@ -60,5 +70,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 9)
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+        }
+    }
 }

@@ -8,6 +8,7 @@ public class PlayerStomp : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Rigidbody2D playerRigidbody;
+    [SerializeField] Animator playerAnimator;
 
     private float rayLength = 0.5f;
     private Vector2 playerBottom;
@@ -29,8 +30,8 @@ public class PlayerStomp : MonoBehaviour
             if (playerRigidbody.linearVelocityY < -0.000001)
             {
                 Destroy(collision.gameObject);
-                Debug.Log("Destroy Object.");
-                Debug.Log(playerRigidbody.linearVelocityY);
+                //Debug.Log("Destroy Object.");
+               // Debug.Log(playerRigidbody.linearVelocityY);
             }
             else
             {

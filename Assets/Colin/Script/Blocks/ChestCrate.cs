@@ -18,6 +18,8 @@ public class ChestCrate : MonoBehaviour
     [SerializeField] GameObject coinPrefab;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] List<Sprite> chestSprites;
+    [SerializeField] GameObject invinciblePrefab;
+    [SerializeField] Animator chestAnimator;
 
     void Start()
     {
@@ -54,6 +56,11 @@ public class ChestCrate : MonoBehaviour
                     powerup.GetComponent<PowerUps>().goingUp = true;
                 }
             }
+            else if (itemType == "Invincible")
+            {
+                GameObject powerup = Instantiate(invinciblePrefab, transform.position, Quaternion.identity);
+                powerup.GetComponent<PowerUps>().goingUp = true;
+            }
             else if (itemType == "Coin")
             {
                 GameObject coinSpawned = Instantiate(coinPrefab, transform.position, Quaternion.identity);
@@ -64,8 +71,8 @@ public class ChestCrate : MonoBehaviour
                 Break();
             }
         }
+        chestAnimator.SetBool("Hit", true);
         empty = true;
-        spriteRenderer.sprite = chestSprites[0];
     }
 
     public void Move()

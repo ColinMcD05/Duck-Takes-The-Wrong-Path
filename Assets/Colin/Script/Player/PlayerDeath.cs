@@ -14,6 +14,7 @@ public class PlayerDeath : MonoBehaviour
     public float deathTimer;
     private int deathSpeed;
     public int upOrDown;
+    [SerializeField] Animator playerAnimator;
 
     private void Awake()
     {
@@ -43,6 +44,8 @@ public class PlayerDeath : MonoBehaviour
         {
             dead = true;
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+            playerController.ChangeSprite(playerController.sprite[5]);
+            playerAnimator.SetInteger("SpriteType", 5);
             if (playerController.lives == 0)
             {
                 playerMovement.inControl = false;

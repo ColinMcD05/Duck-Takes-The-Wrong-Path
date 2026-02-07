@@ -8,6 +8,7 @@ public class PlayerPowers : MonoBehaviour
     public int amountOfWater;
     public float invincibleTimer;
     [SerializeField] private PlayerController playerController;
+    [SerializeField] Animator playerAnimator;
 
     private void Update()
     {
@@ -29,13 +30,15 @@ public class PlayerPowers : MonoBehaviour
         {
             playerController.currentPower = "Grow";
             playerController.ChangeSprite(playerController.sprite[1]);
-            Debug.Log(playerController.currentPower);
+            playerAnimator.SetInteger("SpriteType", 1);
+            // Debug.Log(playerController.currentPower);
         }
         else if (playerController.currentPower == "Grow")
         {
             playerController.currentPower = "Small";
-            playerController.ChangeSprite(playerController.sprite[1]);
-            Debug.Log(playerController.currentPower);
+            playerController.ChangeSprite(playerController.sprite[0]);
+            playerAnimator.SetInteger("SpriteType", 0);
+            // Debug.Log(playerController.currentPower);
             transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
         }
     }
@@ -60,5 +63,20 @@ public class PlayerPowers : MonoBehaviour
     public void Invincible()
     {
         playerController.invincible = false;
+        switch (playerController.currentPower)
+        {
+            case "Grow":
+                playerController.ChangeSprite(playerController.sprite[1]);
+                playerAnimator.SetInteger("SpriteType", 1);
+                break;
+            case "Water":
+                playerController.ChangeSprite(playerController.sprite[2]);
+                playerAnimator.SetInteger("SpriteType", 2);
+                break;
+            case "Small":
+                playerController.ChangeSprite(playerController.sprite[0]);
+                playerAnimator.SetInteger("SpriteType", 0);
+                break;
+        }
     }
 }

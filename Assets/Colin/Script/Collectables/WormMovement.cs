@@ -41,9 +41,9 @@ public class WormMovement : MonoBehaviour
             wormDirection *= -1;
         }
 
-        else if (collision.gameObject.layer == 7)
+        else if (collision.gameObject.layer != 6)
         {
-            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
         }
     }
 

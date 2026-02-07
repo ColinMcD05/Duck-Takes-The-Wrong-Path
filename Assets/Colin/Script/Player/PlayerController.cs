@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private GameManager gameManager;
     [SerializeField] SpriteRenderer spriteRenderer;
     public List<Sprite> sprite;
+    [SerializeField] Animator playerAnimator;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,10 +27,19 @@ public class PlayerController : MonoBehaviour
             case "Grow":
                 if (currentPower == "Small")
                 {
+                    if (invincible)
+                    {
+                        ChangeSprite(sprite[4]);
+                        playerAnimator.SetInteger("SpriteType", 4);
+                    }
+                    else
+                    {
+                        ChangeSprite(sprite[1]);
+                        playerAnimator.SetInteger("SpriteType", 1);
+                    }
                     currentPower = "Grow";
                     gameObject.GetComponent<PlayerPowers>().Grow();
-                    Debug.Log(currentPower);
-                    ChangeSprite(sprite[1]);
+                    //Debug.Log(currentPower);
                 }
                 else
                 {
@@ -39,9 +49,18 @@ public class PlayerController : MonoBehaviour
             case "Water":
                 if (currentPower != "Water")
                 {
+                    if (invincible)
+                    {
+                        ChangeSprite(sprite[4]);
+                        playerAnimator.SetInteger("SpriteType", 4);
+                    }
+                    else
+                    {
+                        ChangeSprite(sprite[2]);
+                        playerAnimator.SetInteger("SpriteType", 2);
+                    }
+                    //Debug.Log(currentPower);
                     currentPower = "Water";
-                    Debug.Log(currentPower);
-                    ChangeSprite(sprite[2]);
                 }
                 else
                 {
@@ -51,12 +70,21 @@ public class PlayerController : MonoBehaviour
             case "Invincible":
                 gameObject.GetComponent<PlayerController>().invincible = true;
                 gameObject.GetComponent<PlayerPowers>().Invoke("Invincible", 10f);
-                Debug.Log(currentPower);
+                if (currentPower == "Small")
+                {
+                    ChangeSprite(sprite[3]);
+                    playerAnimator.SetInteger("SpriteType", 3);
+                }
+                else
+                {
+                    ChangeSprite(sprite[4]);
+                    playerAnimator.SetInteger("SpriteType", 4);
+                }
                 break;
             case null:
                 currentPower = "Small";
                 ChangeSprite(sprite[0]);
-                Debug.Log(currentPower);
+                //Debug.Log(currentPower);
                 break;
         }
     }

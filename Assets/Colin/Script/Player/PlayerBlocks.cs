@@ -13,7 +13,7 @@ public class PlayerBlocks : MonoBehaviour
         ChestCrate chest = collision.gameObject.GetComponent<ChestCrate>();
         if (HittingBlock() && playerRigidbody.linearVelocityY == 0 && chest != null)
         {
-            Debug.Log("Hit block");
+            //Debug.Log("Hit block");
             chest.move = true;
             if (playerController.currentPower != "Small" || collision.gameObject.CompareTag("Chest"))
             {
@@ -26,7 +26,7 @@ public class PlayerBlocks : MonoBehaviour
     {
         float playerHalfHeight = spriteRenderer.bounds.extents.y;
         float playerHalfWidth = spriteRenderer.bounds.extents.x;
-        Debug.Log(playerRigidbody.linearVelocityY);
+        //Debug.Log(playerRigidbody.linearVelocityY);
         if (Physics2D.Raycast(transform.position, Vector2.up, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")) || Physics2D.Raycast(transform.position - new Vector3(playerHalfWidth,0,0), Vector2.up, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")) || Physics2D.Raycast(transform.position + new Vector3(playerHalfWidth,0,0), Vector2.up, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")))
         {
             return true;

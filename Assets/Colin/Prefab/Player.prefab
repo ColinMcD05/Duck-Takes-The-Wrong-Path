@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1687637528871428642}
   - component: {fileID: 3981668517935826124}
   - component: {fileID: 5807469400059719506}
+  - component: {fileID: -8788749141476071375}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -3700192600834747682, guid: 745bbd5fb026aa34d9da70390c79d19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -146,6 +147,10 @@ MonoBehaviour:
   - {fileID: -3700192600834747682, guid: 745bbd5fb026aa34d9da70390c79d19a, type: 3}
   - {fileID: -6524517629087480824, guid: 9af6a600c54297c4999945fd63c025a5, type: 3}
   - {fileID: 5206443494592685670, guid: 028e00bb372525444809640ea4c8ba80, type: 3}
+  - {fileID: -4954451430079619350, guid: f764aaf0d52ec65489fc5948cdac1d7d, type: 3}
+  - {fileID: 6565819497845741237, guid: aa30670799db26141b28b7665ce938b9, type: 3}
+  - {fileID: 8596513488105589408, guid: 23448023db33a8244ba88b3844b05afd, type: 3}
+  playerAnimator: {fileID: -8788749141476071375}
 --- !u!114 &1469236680687242057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +170,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5895836147131981295}
   leftClamp: 0
   inControl: 1
+  playerAnimator: {fileID: -8788749141476071375}
 --- !u!114 &7473858131658536856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +186,7 @@ MonoBehaviour:
   playerRigidbody: {fileID: 6680504850067125658}
   maxHeight: 6
   spriteRenderer: {fileID: 5895836147131981295}
+  playerAnimator: {fileID: -8788749141476071375}
 --- !u!114 &1677128865568342574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStomp
   spriteRenderer: {fileID: 5895836147131981295}
   playerRigidbody: {fileID: 6680504850067125658}
+  playerAnimator: {fileID: -8788749141476071375}
 --- !u!114 &5737940259604735558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +218,7 @@ MonoBehaviour:
   deathCurrentHeight: 0
   deathTimer: 0
   upOrDown: 0
+  playerAnimator: {fileID: -8788749141476071375}
 --- !u!114 &1687637528871428642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +234,9 @@ MonoBehaviour:
   waterBulletPrefab: {fileID: 9168095116505309704, guid: d1c05bbf86031a14bb4aca43f0311d2e, type: 3}
   bulletDirection: 0
   amountOfWater: 0
+  invincibleTimer: 0
   playerController: {fileID: 1822889647218975824}
+  playerAnimator: {fileID: -8788749141476071375}
 --- !u!61 &3981668517935826124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -287,3 +298,25 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5895836147131981295}
   playerRigidbody: {fileID: 6680504850067125658}
   playerController: {fileID: 1822889647218975824}
+--- !u!95 &-8788749141476071375
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567836050910076720}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e5bf83a2391e79340b511dcd36da4908, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
