@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6747390749371367636}
   m_Layer: 6
   m_Name: Chest
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChestCrate
   itemType: 
   used: 0
-  playerController: {fileID: 0}
+  move: 0
   wormPrefab: {fileID: 3858975732537715134, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
   waterPrefab: {fileID: 2080954221502644496, guid: b65e62635e36139409013d0a222b4d53, type: 3}
   coinPrefab: {fileID: 8464389376301525484, guid: 80443ee94e263e642970057060e41a87, type: 3}
