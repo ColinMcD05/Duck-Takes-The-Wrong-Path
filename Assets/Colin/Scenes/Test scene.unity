@@ -710,12 +710,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91da876e98053647a8fa36b80aea882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  player: {fileID: 567836050910076720, guid: bacfc3e13870390488247abd5512d20d, type: 3}
   score: 0
   coins: 0
-  timer: 100
   playerLastPower: 
   lives: 3
+  level: 0
 --- !u!1001 &1980952222984689800
 PrefabInstance:
   m_ObjectHideFlags: 0

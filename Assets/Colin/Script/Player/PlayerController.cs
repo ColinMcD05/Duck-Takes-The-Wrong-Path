@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        SwitchPower(gameManager.playerLastPower);
     }
 
     public void SwitchPower(string gainedPower)

@@ -13,12 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public float hMovement;
     [SerializeField] SpriteRenderer spriteRenderer;
     public float leftClamp;
-    public bool inControl = true;
+    public bool inControl;
     [SerializeField] Animator playerAnimator;
 
     void Start()
     {
         leftClamp = (-Camera.main.orthographicSize * Camera.main.aspect) + 0.5f + Camera.main.transform.position.x;
+        inControl = true;
     }
 
     void Update()

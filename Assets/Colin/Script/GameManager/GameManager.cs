@@ -8,15 +8,15 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
-    [SerializeField] GameObject player;
     public int score;
     public int coins;
-    public float timer;
     public string playerLastPower;
     public int lives = 3;
+    public int level;
 
     void Awake()
     {
+        playerLastPower = "Small"; 
         if (Instance != null)
         {
             Destroy(gameObject);
@@ -28,28 +28,17 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
-    void Update()
-    {
-        if (player.GetComponent<PlayerMovement>().inControl)
-        {
-            LowerTime();
-        }
-    }
     
-    public void RestartLevel()
+    void OnLevelWasLoaded()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        player.GetComponent<PlayerMovement>().inControl = true;
-        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-    }
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        lives = 3;
-        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        player.GetComponent<PlayerMovement>().inControl = true;
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            lives = 3;
+            score = 0;
+            coins = 0;
+            level = 0;
+            playerLastPower = "Small";
+        }
     }
 
     public void AddScore(int earnedScore)
@@ -64,21 +53,6 @@ public class GameManager : MonoBehaviour
         {
             lives++;
             coins = 0;
-        }
-    }
-
-    void LowerTime()
-    {
-        if (timer >= 0)
-        {
-            timer -= Time.deltaTime;
-            float timeLeft = Mathf.FloorToInt(timer % 60);
-            //Debug.Log(timeLeft);
-        }
-        else
-        {
-            player.GetComponent<PlayerController>().SwitchPower("Small");
-            player.GetComponent<PlayerDeath>().Death();
         }
     }
 }

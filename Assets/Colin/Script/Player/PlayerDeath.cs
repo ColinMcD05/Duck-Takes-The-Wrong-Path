@@ -15,6 +15,7 @@ public class PlayerDeath : MonoBehaviour
     private int deathSpeed;
     public int upOrDown;
     [SerializeField] Animator playerAnimator;
+    public float timer;
 
     private void Awake()
     {
@@ -27,6 +28,7 @@ public class PlayerDeath : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         playerController = gameObject.GetComponent<PlayerController>();
         playerMovement = gameObject.GetComponent<PlayerMovement>();
+        timer = 100;
     }
 
     private void Update()
@@ -34,6 +36,11 @@ public class PlayerDeath : MonoBehaviour
         if (dead)
         {
             DeathMovement();
+        }
+
+        if (playerMovement.inControl)
+        {
+            LowerTime();
         }
     }
 
@@ -49,16 +56,16 @@ public class PlayerDeath : MonoBehaviour
             if (gameManager.lives == 0)
             {
                 playerMovement.inControl = false;
-                gameManager.Invoke("RestartGame", 4f);
+                Invoke("RestartGame", 4f);
                 Debug.Log(gameManager.lives);
-                gameManager.lives -= 1;
             }
             // Else, restart the game
             else
             {
                 playerMovement.inControl = false;
                 // Must change this, but need to wait till main menu scene is made, make game reset in game manager
-                gameManager.Invoke("RestartLevel", 4f);
+                Invoke("RestartLevel", 4f);
+                gameManager.lives -= 1;
             }
         }
         else
@@ -96,4 +103,34 @@ public class PlayerDeath : MonoBehaviour
             deathTimer += Time.deltaTime;
         }
     }
+
+    void LowerTime()
+    {
+
+        if (timer >= 0)
+        {
+            timer -= Time.deltaTime;
+            float timeLeft = Mathf.FloorToInt(timer % 60);
+            //Debug.Log(timeLeft);
+        }
+        else
+        {
+            playerController.SwitchPower("Small");
+            Death();
+        }
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameManager.playerLastPower = "Small";
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+    }
+
 }
