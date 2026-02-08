@@ -9,6 +9,7 @@ public class PlayerDeath : MonoBehaviour
     private GameManager gameManager;
     private PlayerController playerController;
     private PlayerMovement playerMovement;
+    private UI gameUI;
     private bool dead;
     public int deathMaxHeight;
     public int deathCurrentHeight;
@@ -29,7 +30,7 @@ public class PlayerDeath : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         playerController = gameObject.GetComponent<PlayerController>();
         playerMovement = gameObject.GetComponent<PlayerMovement>();
-        timer = 100;
+        gameUI = GameObject.Find("UIManager").GetComponent<UI>();
     }
 
     private void Update()
@@ -59,7 +60,7 @@ public class PlayerDeath : MonoBehaviour
             {
                 playerMovement.inControl = false;
                 Invoke("RestartGame", 4f);
-                Debug.Log(gameManager.lives);
+                // Debug.Log(gameManager.lives);
             }
             // Else, restart the game
             else
@@ -111,8 +112,9 @@ public class PlayerDeath : MonoBehaviour
         if (timer >= 0)
         {
             timer -= Time.deltaTime;
-            float timeLeft = Mathf.FloorToInt(timer % 60);
-            //Debug.Log(timeLeft);
+            int timeLeft = Mathf.FloorToInt(timer);
+            gameUI.time = timeLeft;
+            // Debug.Log(timeLeft);
         }
         else
         {

@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5737940259604735558, guid: bacfc3e13870390488247abd5512d20d, type: 3}
+      propertyPath: timer
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6680504850067125658, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_Interpolate
       value: 0
@@ -1057,10 +1061,11 @@ MonoBehaviour:
   coinsUI: {fileID: 1225180162}
   timerUI: {fileID: 753053709}
   livesUI: {fileID: 1463934272}
-  scoreText: {fileID: 0}
-  coinsText: {fileID: 0}
-  timerText: {fileID: 0}
-  livesText: {fileID: 0}
+  scoreText: {fileID: 1162004354}
+  coinsText: {fileID: 1225180164}
+  timerText: {fileID: 753053711}
+  livesText: {fileID: 1463934274}
+  time: 0
 --- !u!4 &1357702831
 Transform:
   m_ObjectHideFlags: 0
