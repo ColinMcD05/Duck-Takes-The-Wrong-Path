@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-    
-    void OnLevelWasLoaded()
+
+    void OnSceneLoaded()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {

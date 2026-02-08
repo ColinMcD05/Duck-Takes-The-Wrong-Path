@@ -1,7 +1,8 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerDeath : MonoBehaviour
 {
@@ -131,6 +132,11 @@ public class PlayerDeath : MonoBehaviour
     {
         SceneManager.LoadScene(0);
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        gameManager.lives = 3;
+        gameManager.score = 0;
+        gameManager.coins = 0;
+        gameManager.level = 0;
+        gameManager.playerLastPower = "Small";
     }
 
 }
