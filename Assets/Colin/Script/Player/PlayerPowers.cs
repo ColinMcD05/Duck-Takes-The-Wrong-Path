@@ -12,7 +12,7 @@ public class PlayerPowers : MonoBehaviour
 
     private void Update()
     {
-        if (gameObject.GetComponent<PlayerController>().currentPower == "Water")
+        if (gameObject.GetComponent<PlayerController>().currentPower == "Water" && gameObject.GetComponent<PlayerMovement>().inControl)
         {
             WaterPower();
         }
