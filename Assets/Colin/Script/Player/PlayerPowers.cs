@@ -21,6 +21,7 @@ public class PlayerPowers : MonoBehaviour
     public void Grow()
     {
         transform.localScale = new Vector3(1f, 1f, 1f);
+        Debug.Log(transform.position.y);
     }
 
     public void Shrink()
