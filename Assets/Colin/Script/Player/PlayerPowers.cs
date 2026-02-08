@@ -10,6 +10,7 @@ public class PlayerPowers : MonoBehaviour
     [SerializeField] private PlayerController playerController;
     [SerializeField] Animator playerAnimator;
 
+
     private void Update()
     {
         if (gameObject.GetComponent<PlayerController>().currentPower == "Water" && gameObject.GetComponent<PlayerMovement>().inControl)

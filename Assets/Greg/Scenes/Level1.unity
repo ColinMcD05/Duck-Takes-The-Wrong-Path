@@ -4339,7 +4339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   player: {fileID: 567967319}
-  center: 0
+  cameraRigidbody: {fileID: 0}
 --- !u!1 &1006512596
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,6 +4767,18 @@ PrefabInstance:
       propertyPath: deathCurrentHeight
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 3981668517935826124, guid: bacfc3e13870390488247abd5512d20d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981668517935826124, guid: bacfc3e13870390488247abd5512d20d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895836147131981295, guid: bacfc3e13870390488247abd5512d20d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 9154249779380716014, guid: 05672657f15a41d42bef9e878c2d0e1e, type: 3}
     - target: {fileID: 5895836147131981295, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -4777,11 +4789,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9054565656941504030, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.16
+      value: -6.37
       objectReference: {fileID: 0}
     - target: {fileID: 9054565656941504030, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.20816
+      value: -1.88
       objectReference: {fileID: 0}
     - target: {fileID: 9054565656941504030, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_LocalPosition.z

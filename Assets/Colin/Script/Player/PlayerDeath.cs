@@ -46,12 +46,12 @@ public class PlayerDeath : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
             GetComponent<Animator>().enabled = false;
             playerController.ChangeSprite(playerController.sprite[5]);
-            if (playerController.lives == 0)
+            if (gameManager.lives == 0)
             {
                 playerMovement.inControl = false;
                 gameManager.Invoke("RestartGame", 4f);
-                Debug.Log(playerController.lives);
-                playerController.lives -= 1;
+                Debug.Log(gameManager.lives);
+                gameManager.lives -= 1;
             }
             // Else, restart the game
             else

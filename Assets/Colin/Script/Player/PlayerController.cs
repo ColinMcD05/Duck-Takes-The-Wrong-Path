@@ -4,8 +4,6 @@ using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour
 {
-
-    public int lives = 3;
     public string currentPower = "Small";
     public bool invincible;
     private GameManager gameManager;
@@ -81,6 +79,7 @@ public class PlayerController : MonoBehaviour
                     playerAnimator.SetInteger("SpriteType", 4);
                 }
                 break;
+            case "Small":
             case null:
                 currentPower = "Small";
                 ChangeSprite(sprite[0]);

@@ -5,10 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+    public static GameManager Instance;
+
     [SerializeField] GameObject player;
     public int score;
     public int coins;
     public float timer;
+    public string playerLastPower;
+    public int lives = 3;
+
+    void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
 
     void Update()
     {
@@ -28,7 +47,7 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        player.GetComponent<PlayerController>().lives = 3;
+        lives = 3;
         player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         player.GetComponent<PlayerMovement>().inControl = true;
     }
@@ -43,7 +62,7 @@ public class GameManager : MonoBehaviour
         coins += earnedCoin;
         if (coins == 100)
         {
-            player.GetComponent<PlayerController>().lives++;
+            lives++;
             coins = 0;
         }
     }
@@ -58,7 +77,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            player.GetComponent<PlayerController>().SwitchPower("");
+            player.GetComponent<PlayerController>().SwitchPower("Small");
             player.GetComponent<PlayerDeath>().Death();
         }
     }
