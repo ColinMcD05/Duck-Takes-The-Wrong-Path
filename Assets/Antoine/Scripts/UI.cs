@@ -11,6 +11,7 @@ public class UI : MonoBehaviour
     public GameObject coinsUI;
     public GameObject timerUI;
     public GameObject livesUI;
+    private UI Instance;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI coinsText;
     public TextMeshProUGUI timerText;
@@ -23,13 +24,27 @@ public class UI : MonoBehaviour
     int lives;
     int time;
 
+    void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     private void Start()
     {   
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         score = 0; 
         coins = 0;
-        lives = playerController.lives;
+        lives = gameManager.lives;
         time = 40;
         timerUI.SetActive(true);
         timerText.text = "Timer: " + time;
@@ -48,7 +63,7 @@ public class UI : MonoBehaviour
         coins = gameManager.coins;
         scoreText.text = "Score: " + score;
         coinsText.text = "Coins: " + coins;
-        lives = playerController.lives;
+        lives = gameManager.lives;
         livesText.text = "Lives: " + lives;
     }
 
