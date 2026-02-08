@@ -53,6 +53,7 @@ public class PlayerDeath : MonoBehaviour
             dead = true;
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
             GetComponent<Animator>().enabled = false;
+            gameManager.lives -= 1;
             playerController.ChangeSprite(playerController.sprite[5]);
             if (gameManager.lives == 0)
             {
@@ -66,7 +67,6 @@ public class PlayerDeath : MonoBehaviour
                 playerMovement.inControl = false;
                 // Must change this, but need to wait till main menu scene is made, make game reset in game manager
                 Invoke("RestartLevel", 4f);
-                gameManager.lives -= 1;
             }
         }
         else
@@ -125,18 +125,10 @@ public class PlayerDeath : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         gameManager.playerLastPower = "Small";
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(0);
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        gameManager.lives = 3;
-        gameManager.score = 0;
-        gameManager.coins = 0;
-        gameManager.level = 0;
-        gameManager.playerLastPower = "Small";
+        SceneManager.LoadScene(3);
     }
-
 }

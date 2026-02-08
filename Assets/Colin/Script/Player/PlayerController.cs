@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     public List<Sprite> sprite;
     [SerializeField] Animator playerAnimator;
 
+    void Awake()
+    {
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
