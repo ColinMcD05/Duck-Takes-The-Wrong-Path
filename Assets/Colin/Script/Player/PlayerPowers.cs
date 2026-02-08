@@ -15,7 +15,7 @@ public class PlayerPowers : MonoBehaviour
         if (gameObject.GetComponent<PlayerController>().currentPower == "Water")
         {
             WaterPower();
-        }  
+        }
     }
 
     public void Grow()
@@ -57,6 +57,7 @@ public class PlayerPowers : MonoBehaviour
         {
             Instantiate(waterBulletPrefab, transform.position + new Vector3(0.65f * bulletDirection, 0.12f, 0), Quaternion.identity);
             amountOfWater += 1;
+            playerAnimator.SetTrigger("WaterPower");
         }
     }
 

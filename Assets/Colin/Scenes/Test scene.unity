@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8788749141476071375, guid: bacfc3e13870390488247abd5512d20d, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 567836050910076720, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -138,6 +142,10 @@ PrefabInstance:
     - target: {fileID: 6680504850067125658, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473858131658536856, guid: bacfc3e13870390488247abd5512d20d, type: 3}
+      propertyPath: maxHeight
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9054565656941504030, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -580,6 +588,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80443ee94e263e642970057060e41a87, type: 3}
+--- !u!1001 &1754259670
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.1558876
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2650447
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341852820769910115, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3858975732537715134, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+      propertyPath: m_Name
+      value: Grow
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
 --- !u!1001 &2114442741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -618,7 +683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6430937659285739656, guid: fee15ce7b09aa884aa43e8c388c9cbe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.501
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 6430937659285739656, guid: fee15ce7b09aa884aa43e8c388c9cbe6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -844,3 +909,4 @@ SceneRoots:
   - {fileID: 1718778626}
   - {fileID: 67624688}
   - {fileID: 7501104733231924331}
+  - {fileID: 1754259670}

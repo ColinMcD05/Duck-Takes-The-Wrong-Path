@@ -29,6 +29,13 @@ public class PlayerMovement : MonoBehaviour
             Movement();
         }
 
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            playerAnimator.SetTrigger("Quack");
+            inControl = false;
+            Invoke("GainControl", 0.8f);
+        }
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -76,5 +83,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
         }
+    }
+
+    void GainControl()
+    {
+        inControl = true;
     }
 }
