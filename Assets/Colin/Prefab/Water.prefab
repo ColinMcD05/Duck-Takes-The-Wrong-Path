@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5364744855981694811}
   - component: {fileID: 4242178120164289872}
   - component: {fileID: 4517497166289035935}
+  - component: {fileID: 7729246401573899073}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
@@ -170,3 +171,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!111 &7729246401573899073
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080954221502644496}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: bbb7bfe2dd527ec40b583c8631fd2edd, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
