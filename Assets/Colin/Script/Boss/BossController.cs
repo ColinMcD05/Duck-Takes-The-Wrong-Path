@@ -4,7 +4,7 @@ using UnityEngine;
 public class BossController : MonoBehaviour
 {
     public int bossLives;
-    private bool canMove;
+    public bool canMove;
     private float enemyHalfHeight;
     [SerializeField] SpriteRenderer enemySprite;
     [SerializeField] Rigidbody2D enemyRigidbody;
@@ -27,6 +27,7 @@ public class BossController : MonoBehaviour
         moveTimer = 0.25f;
         attackTimer = 2f;
         bossLives = 5;
+        canMove = false;
     }
 
     void Update()
