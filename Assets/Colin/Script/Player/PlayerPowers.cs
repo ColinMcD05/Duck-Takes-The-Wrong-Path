@@ -10,17 +10,19 @@ public class PlayerPowers : MonoBehaviour
     [SerializeField] private PlayerController playerController;
     [SerializeField] Animator playerAnimator;
 
+
     private void Update()
     {
-        if (gameObject.GetComponent<PlayerController>().currentPower == "Water")
+        if (gameObject.GetComponent<PlayerController>().currentPower == "Water" && gameObject.GetComponent<PlayerMovement>().inControl)
         {
             WaterPower();
-        }  
+        }
     }
 
     public void Grow()
     {
         transform.localScale = new Vector3(1f, 1f, 1f);
+        //Debug.Log(transform.position.y);
     }
 
     public void Shrink()
@@ -57,6 +59,7 @@ public class PlayerPowers : MonoBehaviour
         {
             Instantiate(waterBulletPrefab, transform.position + new Vector3(0.65f * bulletDirection, 0.12f, 0), Quaternion.identity);
             amountOfWater += 1;
+            playerAnimator.SetTrigger("WaterPower");
         }
     }
 

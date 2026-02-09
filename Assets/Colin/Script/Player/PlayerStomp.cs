@@ -12,6 +12,7 @@ public class PlayerStomp : MonoBehaviour
 
     private float rayLength = 0.5f;
     private Vector2 playerBottom;
+    private int iFrames;
 
     private void Start()
     {
@@ -25,9 +26,9 @@ public class PlayerStomp : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.layer == 7 )
         {
-            if (playerRigidbody.linearVelocityY < -0.000001)
+            if (playerRigidbody.linearVelocityY < -0.000001 && collision.gameObject.CompareTag("Boss"))
             {
                 Destroy(collision.gameObject);
                 //Debug.Log("Destroy Object.");
@@ -41,7 +42,19 @@ public class PlayerStomp : MonoBehaviour
                 }
                 else
                 {
-                    gameObject.GetComponent<PlayerDeath>().Death();
+                    if (collision.gameObject.CompareTag("Mimic"))
+                    {
+                        
+                    }
+                    else
+                    {
+                        if (collision.gameObject.CompareTag("Boss"))
+                        {
+                            collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                            gameObject.GetComponent<PlayerController>().currentPower = "Small";
+                        }
+                        gameObject.GetComponent<PlayerDeath>().Death();
+                    }
                 }
             }
         }

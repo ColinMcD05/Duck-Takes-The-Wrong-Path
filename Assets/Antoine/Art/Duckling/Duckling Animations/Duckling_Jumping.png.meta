@@ -125,18 +125,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 4
-        width: 115
-        height: 94
+        y: 0
+        width: 153
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee18f2d4cad6a0f70800000000000000
+      spriteID: 7668b797cd30c2843bc86da1a34dd978
       internalID: 9154249779380716014
       vertices: []
       indices: 
@@ -146,19 +146,19 @@ TextureImporter:
       name: Duckling_Jumping_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 4
-        width: 115
-        height: 88
+        x: 170
+        y: 0
+        width: 153
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8227ea8c5b2d73770800000000000000
+      spriteID: aaad2308d6a62394ea15967fb984b3f1
       internalID: 8590566492430299688
       vertices: []
       indices: 
@@ -168,19 +168,19 @@ TextureImporter:
       name: Duckling_Jumping_2
       rect:
         serializedVersion: 2
-        x: 243
-        y: 15
-        width: 115
-        height: 91
+        x: 335
+        y: 0
+        width: 153
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1fb74295fc4704950800000000000000
+      spriteID: d4ab341693c57f14ba2f6ca505e53623
       internalID: 6431268701787683825
       vertices: []
       indices: 
@@ -190,19 +190,19 @@ TextureImporter:
       name: Duckling_Jumping_3
       rect:
         serializedVersion: 2
-        x: 362
-        y: 23
-        width: 115
-        height: 94
+        x: 500
+        y: 0
+        width: 153
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b1f6372e6c2872af0800000000000000
+      spriteID: 2bba8aaf2db9082468a7473666f0f71d
       internalID: -421224249421500645
       vertices: []
       indices: 
@@ -212,20 +212,86 @@ TextureImporter:
       name: Duckling_Jumping_4
       rect:
         serializedVersion: 2
-        x: 480
-        y: 27
-        width: 115
-        height: 104
+        x: 665
+        y: 0
+        width: 153
+        height: 135
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 77905ee2bffabe1b0800000000000000
+      spriteID: 113027fa8da8b584c95daa2671f5ab0d
       internalID: -5626209816110888585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duckling_Jumping_5
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 0
+        width: 153
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3233f4e8cd12944fb37a49eb1a9f2f9
+      internalID: -5893949255043584321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duckling_Jumping_6
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 0
+        width: 153
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89980f4d046ff7941b752141697756da
+      internalID: 1046105180421582299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duckling_Jumping_7
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 153
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c525e36f5da11804488c1ff0e48806e8
+      internalID: 5474324101938499878
       vertices: []
       indices: 
       edges: []
@@ -242,7 +308,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: True
     nameFileIdTable:
       Duckling_Jumping_0: 9154249779380716014
       Duckling_Jumping_1: 8590566492430299688

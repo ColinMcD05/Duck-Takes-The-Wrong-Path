@@ -13,12 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public float hMovement;
     [SerializeField] SpriteRenderer spriteRenderer;
     public float leftClamp;
-    public bool inControl = true;
+    public bool inControl;
     [SerializeField] Animator playerAnimator;
 
     void Start()
     {
         leftClamp = (-Camera.main.orthographicSize * Camera.main.aspect) + 0.5f + Camera.main.transform.position.x;
+        inControl = true;
     }
 
     void Update()
@@ -29,10 +30,19 @@ public class PlayerMovement : MonoBehaviour
             Movement();
         }
 
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            playerAnimator.SetTrigger("Quack");
+            inControl = false;
+            Invoke("GainControl", 0.8f);
+        }
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit(); }
     }
 
     void GetInput()
@@ -76,5 +86,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
         }
+    }
+
+    void GainControl()
+    {
+        inControl = true;
     }
 }

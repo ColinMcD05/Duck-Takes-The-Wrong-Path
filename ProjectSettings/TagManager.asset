@@ -13,6 +13,10 @@ TagManager:
   - Grow
   - Water
   - Invincible
+  - Bullet
+  - Mimic
+  - Boss
+  - Knife
   layers:
   - Default
   - TransparentFX

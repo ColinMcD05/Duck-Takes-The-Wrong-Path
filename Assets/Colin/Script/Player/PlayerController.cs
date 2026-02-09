@@ -4,8 +4,6 @@ using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour
 {
-
-    public int lives = 3;
     public string currentPower = "Small";
     public bool invincible;
     private GameManager gameManager;
@@ -13,11 +11,16 @@ public class PlayerController : MonoBehaviour
     public List<Sprite> sprite;
     [SerializeField] Animator playerAnimator;
 
+    void Awake()
+    {
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        SwitchPower(gameManager.playerLastPower);
     }
 
     public void SwitchPower(string gainedPower)
@@ -81,6 +84,7 @@ public class PlayerController : MonoBehaviour
                     playerAnimator.SetInteger("SpriteType", 4);
                 }
                 break;
+            case "Small":
             case null:
                 currentPower = "Small";
                 ChangeSprite(sprite[0]);

@@ -115,7 +115,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.7
   m_Material: {fileID: 6200000, guid: 9a3f0a0793bdcc645b106863c9878c18, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
   playerRigidbody: {fileID: 6680504850067125658}
-  maxHeight: 6
+  maxHeight: 10
   spriteRenderer: {fileID: 5895836147131981295}
   playerAnimator: {fileID: -8788749141476071375}
 --- !u!114 &1677128865568342574

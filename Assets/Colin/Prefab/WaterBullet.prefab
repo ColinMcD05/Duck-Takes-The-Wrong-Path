@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3899287828640490487}
   - component: {fileID: 177914198381021146}
   - component: {fileID: 146935907026571215}
+  - component: {fileID: -6238222725332377700}
   m_Layer: 0
   m_Name: WaterBullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterMovement
   spriteRenderer: {fileID: 3899287828640490487}
+  bulletSpeed: 0
+  bulletAnimator: {fileID: -6238222725332377700}
 --- !u!70 &146935907026571215
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -142,3 +145,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000000052389666, y: 0.04394764}
   m_Size: {x: 1.6600004, y: 0.9480251}
   m_Direction: 1
+--- !u!95 &-6238222725332377700
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9168095116505309704}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 33705988a27aca549a6d00b2ab8838c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
