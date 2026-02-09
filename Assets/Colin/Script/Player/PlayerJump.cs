@@ -42,7 +42,7 @@ public class PlayerJump : MonoBehaviour
             }
         }
     }
-    private bool GetIsGrounded()
+    public bool GetIsGrounded()
     {
         float playerHalfHeight = spriteRenderer.bounds.extents.y;
         return Physics2D.Raycast(transform.position, Vector2.down, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground"));
