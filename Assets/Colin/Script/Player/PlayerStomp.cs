@@ -25,7 +25,7 @@ public class PlayerStomp : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.layer == 7)
         {
             if (playerRigidbody.linearVelocityY < -0.000001)
             {
@@ -41,7 +41,14 @@ public class PlayerStomp : MonoBehaviour
                 }
                 else
                 {
-                    gameObject.GetComponent<PlayerDeath>().Death();
+                    if (collision.gameObject.CompareTag("Mimic"))
+                    {
+                        
+                    }
+                    else
+                    {
+                        gameObject.GetComponent<PlayerDeath>().Death();
+                    }
                 }
             }
         }

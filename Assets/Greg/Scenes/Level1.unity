@@ -1264,6 +1264,9 @@ GameObject:
   m_Component:
   - component: {fileID: 204930607}
   - component: {fileID: 204930608}
+  - component: {fileID: 204930609}
+  - component: {fileID: 204930611}
+  - component: {fileID: 204930610}
   m_Layer: 0
   m_Name: Crank_Off_0
   m_TagString: Untagged
@@ -1280,7 +1283,7 @@ Transform:
   m_GameObject: {fileID: 204930606}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4884894, y: -0.055, z: 0}
+  m_LocalPosition: {x: -1.4884894, y: -0.028, z: 0}
   m_LocalScale: {x: 0.30268106, y: 0.18119472, z: 2.274648}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1344,6 +1347,88 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &204930609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204930606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a36f3fb61480291498dacaba25a6fb36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelOneEnd
+  moat: {fileID: 1612641519}
+  moatSprite: {fileID: -8575797119504074553, guid: e2c3f9c821a5f024796a7e5a299ec252, type: 3}
+--- !u!95 &204930610
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204930606}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 884728835150ebd468419d8c4c25c999, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &204930611
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204930606}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.39, y: 0.46}
+    newSize: {x: 0.39, y: 0.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.39, y: 0.46}
+  m_EdgeRadius: 0
 --- !u!4 &205802956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1785188783299958087, guid: 80443ee94e263e642970057060e41a87, type: 3}
@@ -7066,7 +7151,7 @@ Transform:
   m_GameObject: {fileID: 968686478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 76.21, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11563,7 +11648,7 @@ Transform:
   m_GameObject: {fileID: 1374936528}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.09, y: -0.03, z: 0}
+  m_LocalPosition: {x: 84.09, y: -0.383, z: 0}
   m_LocalScale: {x: 7.7968125, y: 12.553611, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12589,10 +12674,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91da876e98053647a8fa36b80aea882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  player: {fileID: 567967319}
   score: 0
   coins: 0
-  timer: 50
+  playerLastPower: 
+  lives: 3
+  level: 0
 --- !u!4 &1473696102
 Transform:
   m_ObjectHideFlags: 0
@@ -13509,7 +13595,7 @@ Transform:
   m_GameObject: {fileID: 1612641519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.666, y: 0.120284125, z: 0}
+  m_LocalPosition: {x: -0.666, y: 0.092, z: 0}
   m_LocalScale: {x: 1.2055889, y: 0.7030823, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

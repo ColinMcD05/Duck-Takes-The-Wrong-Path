@@ -3983,6 +3983,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7031366455056080093, guid: 4beda6b8e56bb2a4d9c008e096624ce8, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4821,11 +4825,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4746346233736051880, guid: 4beda6b8e56bb2a4d9c008e096624ce8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.4403
+      value: 32.23
       objectReference: {fileID: 0}
     - target: {fileID: 4746346233736051880, guid: 4beda6b8e56bb2a4d9c008e096624ce8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.8403
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 4746346233736051880, guid: 4beda6b8e56bb2a4d9c008e096624ce8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5191,7 +5195,7 @@ Transform:
   m_GameObject: {fileID: 1434223784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.6, y: 8.4, z: -10}
+  m_LocalPosition: {x: 197.6, y: 8.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7777,6 +7781,14 @@ PrefabInstance:
     - target: {fileID: 5361771110730955049, guid: 408d81a1276ab684f80f9ab72def1d29, type: 3}
       propertyPath: m_Name
       value: Ground_Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462873983141588943, guid: 408d81a1276ab684f80f9ab72def1d29, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6706755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462873983141588943, guid: 408d81a1276ab684f80f9ab72def1d29, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.014031649
       objectReference: {fileID: 0}
     - target: {fileID: 8818552143590875356, guid: 408d81a1276ab684f80f9ab72def1d29, type: 3}
       propertyPath: m_LocalPosition.x

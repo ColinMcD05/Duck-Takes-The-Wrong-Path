@@ -47,7 +47,8 @@ public class LevelOneEnd : MonoBehaviour
                 collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
                 levelEnd = true;
                 gameObject.GetComponent<Animator>().SetTrigger("Crank");
-                //collision.gameObject.GetComponent<Animator>().SetTrigger("Crank");
+                collision.gameObject.GetComponent<Animator>().SetBool("IsWalking", false);
+                collision.gameObject.GetComponent<Animator>().SetTrigger("Crank");
             }
             Destroy(GameObject.Find("Enemies"));
            // Invoke("NextLevel", 5f);
@@ -56,12 +57,14 @@ public class LevelOneEnd : MonoBehaviour
 
     void TransitionMovement()
     {
-        if (GameObject.Find("Player").transform.position.x <= 84)
+        if (GameObject.Find("Player").transform.position.x < 84)
         {
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("IsWalking", true);
             GameObject.Find("Player").transform.position += new Vector3(1f, 0f) * Time.deltaTime * GameObject.Find("Player").GetComponent<PlayerMovement>().playerSpeed;
         }
         else
         {
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("IsWalking", false);
             Invoke("NextLevel", 1f);
         }
     }
