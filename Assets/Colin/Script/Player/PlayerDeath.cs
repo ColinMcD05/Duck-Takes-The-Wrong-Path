@@ -23,6 +23,7 @@ public class PlayerDeath : MonoBehaviour
     {
         dead = false;
         deathSpeed = 3;
+        timer = 200;
     }
 
     void Start()
