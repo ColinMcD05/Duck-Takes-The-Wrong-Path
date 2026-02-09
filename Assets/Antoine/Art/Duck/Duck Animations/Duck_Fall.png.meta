@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df5eb12a68617134786c9426a1d72453
+guid: 74d97b92a30cf0140a26add905164247
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -121,67 +121,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Duck_Jumping_5
+      name: Duck_Fall_5
       rect:
         serializedVersion: 2
-        x: 600
-        y: 15
-        width: 115
-        height: 100
+        x: 795
+        y: 0
+        width: 145
+        height: 129
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8fd700b20ea6a410800000000000000
-      internalID: 1488068053459001230
+      spriteID: c04d538a4f53bbc43ba5e6d1fda23943
+      internalID: -1020271136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck_Jumping_6
+      name: Duck_Fall_6
       rect:
         serializedVersion: 2
-        x: 719
-        y: 7
-        width: 115
-        height: 100
+        x: 953
+        y: 0
+        width: 145
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cfe81788ecc71e670800000000000000
-      internalID: 8566265192729644796
+      spriteID: ecf7fa770dec8894993b59517943a3fb
+      internalID: 1431032220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck_Jumping_7
+      name: Duck_Fall_7
       rect:
         serializedVersion: 2
-        x: 837
-        y: 4
-        width: 115
-        height: 99
+        x: 1111
+        y: 0
+        width: 145
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f715fc065d1aa7330800000000000000
-      internalID: 3709455180917330303
+      spriteID: e5600e84cdb8aeb439892c8b196400f1
+      internalID: 1768606172
       vertices: []
       indices: 
       edges: []
@@ -190,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5968b3485285ce545845b22bf38836a6
+    spriteID: 274074daf470d3043924ee1a8b771464
     internalID: 0
     vertices: []
     indices: 
@@ -198,16 +198,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Duck_Jumping_0: -4513125721815349422
-      Duck_Jumping_1: -7342795131772885974
-      Duck_Jumping_2: -8004989783066947756
-      Duck_Jumping_3: -3790524632809783836
-      Duck_Jumping_4: -4926098825578385920
-      Duck_Jumping_5: 1488068053459001230
-      Duck_Jumping_6: 8566265192729644796
-      Duck_Jumping_7: 3709455180917330303
+      Duck_Fall_0: -438762059
+      Duck_Fall_1: 1220854009
+      Duck_Fall_2: 1597955878
+      Duck_Fall_3: 500175206
+      Duck_Fall_4: 1849745352
+      Duck_Fall_5: -1020271136
+      Duck_Fall_6: 1431032220
+      Duck_Fall_7: 1768606172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

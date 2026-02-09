@@ -28,19 +28,6 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
-    void OnSceneLoaded()
-    {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            lives = 3;
-            score = 0;
-            coins = 0;
-            level = 0;
-            playerLastPower = "Small";
-        }
-    }
-
     public void AddScore(int earnedScore)
     {
         score += earnedScore;

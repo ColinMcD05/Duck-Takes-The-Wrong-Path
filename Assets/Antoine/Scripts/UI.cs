@@ -22,7 +22,7 @@ public class UI : MonoBehaviour
     int score;
     int coins;
     int lives;
-    int time;
+    public int time;
 
     void Awake()
     {
@@ -45,7 +45,6 @@ public class UI : MonoBehaviour
         score = 0; 
         coins = 0;
         lives = gameManager.lives;
-        time = 40;
         timerUI.SetActive(true);
         timerText.text = "Timer: " + time;
         scoreUI.SetActive(true);
@@ -54,7 +53,6 @@ public class UI : MonoBehaviour
         livesText.text = "Lives: " + lives;
         coinsUI.SetActive(true);
         coinsText.text = "Coins: " + coins;
-        StartCoroutine(DecreasedTime());
     }
 
     private void Update()
@@ -65,13 +63,6 @@ public class UI : MonoBehaviour
         coinsText.text = "Coins: " + coins;
         lives = gameManager.lives;
         livesText.text = "Lives: " + lives;
-    }
-
-    IEnumerator DecreasedTime()
-    {
-        yield return new WaitForSeconds(1);
-        time--;
         timerText.text = "Timer: " + time;
-        StartCoroutine(DecreasedTime());
     }
 }

@@ -124,10 +124,10 @@ TextureImporter:
       name: Duck_Jumping_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 116
-        height: 99
+        x: 5
+        y: 0
+        width: 145
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: Duck_Jumping_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 4
-        width: 115
-        height: 95
+        x: 163
+        y: 0
+        width: 145
+        height: 120
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Duck_Jumping_2
       rect:
         serializedVersion: 2
-        x: 243
-        y: 7
-        width: 115
-        height: 96
+        x: 321
+        y: 0
+        width: 145
+        height: 120
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Duck_Jumping_3
       rect:
         serializedVersion: 2
-        x: 362
-        y: 7
-        width: 115
-        height: 100
+        x: 479
+        y: 0
+        width: 145
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: Duck_Jumping_4
       rect:
         serializedVersion: 2
-        x: 481
-        y: 23
-        width: 115
-        height: 108
+        x: 637
+        y: 0
+        width: 145
+        height: 135
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,7 +242,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Duck_Jumping_0: -4513125721815349422
       Duck_Jumping_1: -7342795131772885974
