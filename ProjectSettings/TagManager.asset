@@ -17,6 +17,7 @@ TagManager:
   - Mimic
   - Boss
   - Knife
+  - Lava
   layers:
   - Default
   - TransparentFX
