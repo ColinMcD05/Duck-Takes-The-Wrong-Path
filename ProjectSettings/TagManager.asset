@@ -13,6 +13,7 @@ TagManager:
   - Grow
   - Water
   - Invincible
+  - Bullet
   layers:
   - Default
   - TransparentFX

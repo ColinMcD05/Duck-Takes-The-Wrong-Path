@@ -8,6 +8,7 @@ public class WaterMovement : MonoBehaviour
     private int bulletDirection;
     [SerializeField] SpriteRenderer spriteRenderer;
     public float bulletSpeed;
+    [SerializeField] Animator bulletAnimator;
     private void Awake()
     {
         bulletSpeed = 10f;
@@ -38,12 +39,14 @@ public class WaterMovement : MonoBehaviour
     {
         if (collision.CompareTag("Wall"))
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 0.5f);
+            bulletAnimator.SetTrigger("Hit");
         }
         else if (collision.CompareTag("Enemy") || collision.CompareTag("Skeleton"))
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 0.5f);
             Destroy(collision.gameObject);
+            bulletAnimator.SetTrigger("Hit");
         }
     }
 }
