@@ -28,7 +28,7 @@ public class UI : MonoBehaviour
     {
         if (Instance != null)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
             return;
         }
         else
@@ -57,7 +57,11 @@ public class UI : MonoBehaviour
 
     private void Update()
     {
-        score = gameManager.score;
+    if (SceneManager.GetActiveScene().buildIndex == 0)
+    {
+        Destroy(this.gameObject);
+    }
+    score = gameManager.score;
         coins = gameManager.coins;
         scoreText.text = "Score: " + score;
         coinsText.text = "Coins: " + coins;
