@@ -10,6 +10,7 @@ public class GoblinMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer gs;
     private float halfWidth;
     private Vector2 movement;
+    private bool canMove;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,10 +23,13 @@ public class GoblinMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.x = speed * direction;
-        movement.y = gb.linearVelocity.y;
-        gb.linearVelocity = movement;
-        SetDirection();
+        if (canMove)
+        {
+            movement.x = speed * direction;
+            movement.y = gb.linearVelocity.y;
+            gb.linearVelocity = movement;
+            SetDirection();
+        }
     }
 
     void SetDirection()
@@ -47,5 +51,9 @@ public class GoblinMovement : MonoBehaviour
                 gs.flipX = true;
             }
         }       
+    }
+    private void OnBecameVisible()
+    {
+        canMove = true;
     }
 }
