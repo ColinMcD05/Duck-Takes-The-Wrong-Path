@@ -9,11 +9,14 @@ public class WaterMovement : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     public float bulletSpeed;
     [SerializeField] Animator bulletAnimator;
+    public bool moving;
+
     private void Awake()
     {
         bulletSpeed = 10f;
         player = GameObject.FindWithTag("Player").GetComponent<PlayerPowers>();
         bulletDirection = player.bulletDirection;
+        moving = true;
         if (bulletDirection == -1 )
         {
             spriteRenderer.flipX = true;
@@ -21,7 +24,10 @@ public class WaterMovement : MonoBehaviour
     }
     void Update()
     {
-        Movement();
+        if (moving)
+        {
+            Movement();
+        }
     }
 
     void Movement()
@@ -41,12 +47,14 @@ public class WaterMovement : MonoBehaviour
         {
             Destroy(this.gameObject, 0.5f);
             bulletAnimator.SetTrigger("Hit");
+            moving = false;
         }
         else if (collision.CompareTag("Enemy") || collision.CompareTag("Skeleton"))
         {
             Destroy(this.gameObject, 0.5f);
             Destroy(collision.gameObject);
             bulletAnimator.SetTrigger("Hit");
+            moving = false;
         }
     }
 }
