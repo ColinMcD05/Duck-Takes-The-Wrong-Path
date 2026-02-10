@@ -20,6 +20,7 @@ TagManager:
   - Lava
   - Goblin
   - MiniKnight
+  - Skull
   layers:
   - Default
   - TransparentFX

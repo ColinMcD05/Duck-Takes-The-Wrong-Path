@@ -14,6 +14,7 @@ public class SkeletonActions : MonoBehaviour
     private Vector2 movement;
     private bool isGrounded;
     private GameObject player;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,11 +35,6 @@ public class SkeletonActions : MonoBehaviour
             movement.y = sb.linearVelocity.y;
             sb.linearVelocity = movement;
             SetDirection();
-        }
-
-        else
-        {
-            sb.linearVelocity = new Vector2(0, 0);
         }
     }
 

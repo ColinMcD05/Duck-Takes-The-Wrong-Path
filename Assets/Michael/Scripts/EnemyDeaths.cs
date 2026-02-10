@@ -8,16 +8,12 @@ public class EnemyDeath : MonoBehaviour
 
     [SerializeField] SpriteRenderer enemySprite;
     public Sprite deathSprite;
-    public bool isDead;
     public bool dead;
+    public int direction;
+    public bool canSpawn;
 
     void Update()
     {
-        if(isDead)
-        {
-            GetShot();
-            Destroy(this.gameObject, 1f);
-        }
     }
 
     public void Squish()
@@ -30,8 +26,9 @@ public class EnemyDeath : MonoBehaviour
 
     public void GetShot()
     {
-        this.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        this.gameObject.GetComponent<Collider2D>().isTrigger = true;
         dead = true;
-        transform.position += new Vector3(0f, -1f) * Time.deltaTime * 3f;
+        gameObject.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(4 * direction, 3f);
+        Destroy(this.gameObject, 2f);
     }
 }

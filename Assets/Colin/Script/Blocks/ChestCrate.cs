@@ -27,7 +27,7 @@ public class ChestCrate : MonoBehaviour
         moveHeight = 0.325f;
         origin = gameObject.transform.position.y;
         moveDirection = 1;
-        Debug.Log(origin);
+        // Debug.Log(origin);
     }
 
     void Update()

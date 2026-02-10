@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] Rigidbody2D cameraRigidbody;
     private float bottom;
     private float top;
-    private float topClamp;
+    public float topClamp;
     private float bottomClamp;
     public float cameraBottom;
     public bool inControl;
@@ -20,7 +21,7 @@ public class CameraController : MonoBehaviour
         bottom = transform.position.y;
         cameraBottom = transform.position.y;
         top = 16.23974f;
-        topClamp = Camera.main.orthographicSize * 0.75f;
+        topClamp = transform.position.y + Camera.main.orthographicSize * 0.75f;
         bottomClamp = transform.position.y - 2;
     }
 
@@ -42,19 +43,22 @@ public class CameraController : MonoBehaviour
                 }
             }
 
-            if (player.GetComponent<PlayerMovement>().playerRigidbody.position.y >= topClamp && transform.position.y <= top)
+            if (SceneManager.GetActiveScene().buildIndex == 2)
             {
-                cameraRigidbody.position += new Vector2(0f, 1f) * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
-                topClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
-                bottomClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
-            }
-            else if (player.GetComponent<PlayerMovement>().playerRigidbody.position.y <= bottomClamp && transform.position.y >= bottom)
-            {
-                if (transform.position.y >= cameraBottom)
+                if (player.GetComponent<PlayerMovement>().playerRigidbody.position.y >= topClamp && transform.position.y <= top)
                 {
                     cameraRigidbody.position += new Vector2(0f, 1f) * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
                     topClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
                     bottomClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
+                }
+                else if (player.GetComponent<PlayerMovement>().playerRigidbody.position.y <= bottomClamp && transform.position.y >= bottom)
+                {
+                    if (transform.position.y >= cameraBottom)
+                    {
+                        cameraRigidbody.position += new Vector2(0f, 1f) * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
+                        topClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
+                        bottomClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
+                    }
                 }
             }
         }

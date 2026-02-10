@@ -35,7 +35,6 @@ public class GoblinMovement : MonoBehaviour
         }
         else
         {
-            gb.linearVelocity = new Vector2(0, 0);
             gameObject.GetComponent<Animator>().enabled = false;
         }
     }

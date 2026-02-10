@@ -47,7 +47,6 @@ public class MiniKnightActions : MonoBehaviour
         else
         {
             gameObject.GetComponent<Animator>().enabled = false;
-            mkb.linearVelocity = new Vector2(0, 0);
         }
         
     }

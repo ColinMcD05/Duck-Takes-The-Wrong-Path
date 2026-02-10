@@ -54,18 +54,36 @@ public class PlayerStomp : MonoBehaviour
                         collision.gameObject.GetComponent<Animator>().SetTrigger("Break");
                         Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
                         collision.gameObject.GetComponent<EnemyDeath>().dead = true;
-                        Destroy(collision.gameObject, 2f);
+                        collision.gameObject.GetComponent<EnemyDeath>().canSpawn = true;
+                        Destroy(collision.gameObject, 1f);
                         gameManager.AddScore(300);
                         break;
                     case "MiniKnight":
-                        collision.gameObject.GetComponent<EnemyDeath>().isDead = true;
+                        collision.gameObject.GetComponent<EnemyDeath>().GetShot();
                         Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
                         gameManager.AddScore(500);
+                        break;
+                    case "Skull":
+                        collision.gameObject.GetComponent<SkullAction>().isKicked = !collision.gameObject.GetComponent<SkullAction>().isKicked;
+                        Vector3 forward = transform.TransformDirection(transform.position);
+                        Vector3 toOther = Vector3.Normalize(transform.position - collision.transform.position);
+                        Debug.Log(Vector3.Dot(forward, toOther));
+                        if (Vector3.Dot(forward, toOther) >= 0)
+                        {
+                            collision.gameObject.GetComponent<SkullAction>().direction = 1;
+                        }
+                        else
+                        {
+                            collision.gameObject.GetComponent<SkullAction>().direction = -1;
+                        }
+
                         break;
                 }
                 //Debug.Log("Destroy Object.");
                 // Debug.Log(playerRigidbody.linearVelocityY);
+                collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0f, 0f);
                 audioPlayer.PlayOneShot(hit, 0.4f);
+                playerRigidbody.linearVelocityY = 3;
             }
             else
             {
@@ -75,7 +93,32 @@ public class PlayerStomp : MonoBehaviour
                     collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
                     gameObject.GetComponent<PlayerController>().SwitchPower("Small");
                 }
-                gameObject.GetComponent<PlayerDeath>().Death();
+                if (collision.gameObject.CompareTag("Skull"))
+                {
+                    if (!collision.gameObject.GetComponent<SkullAction>().isKicked)
+                    {
+                        collision.gameObject.GetComponent<SkullAction>().isKicked = true;
+                        Vector3 forward = transform.TransformDirection(transform.position);
+                        Vector3 toOther = Vector3.Normalize(transform.position - collision.transform.position);
+                        if (Vector3.Dot(forward, toOther) >= 0)
+                        {
+                            collision.gameObject.GetComponent<SkullAction>().direction = 1;
+                        }
+                        else
+                        {
+                            collision.gameObject.GetComponent<SkullAction>().direction = -1;
+                        }
+                    }
+                    else
+                    {
+                        gameObject.GetComponent<PlayerDeath>().Death();
+                        collision.gameObject.GetComponent<SkullAction>().isKicked = false;
+                    }
+                }
+                else
+                {
+                    gameObject.GetComponent<PlayerDeath>().Death();
+                }
             }
         }
         else if (collision.gameObject.CompareTag("Mimic"))

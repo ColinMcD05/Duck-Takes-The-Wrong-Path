@@ -35,7 +35,7 @@ public class MimicActivity : MonoBehaviour
 
     void Open()
     {
-        timer = 4f;
+        timer = 3f;
         isOpen = true;
     }
 
