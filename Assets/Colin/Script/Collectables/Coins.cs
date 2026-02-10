@@ -48,6 +48,7 @@ public class Coins : MonoBehaviour
             gameManager.AddScore(200);
             gameManager.AddCoin(1);
             Destroy(this.gameObject, 0.5f);
+            fromCrate = false;
         }
     }
 }
