@@ -52,9 +52,10 @@ public class WaterMovement : MonoBehaviour
         else if (collision.gameObject.layer == 7 && !collision.gameObject.CompareTag("Boss"))
         {
             Destroy(this.gameObject, 0.5f);
-            collision.gameObject.GetComponent<GoblinDeath>().GetShot();
+            collision.gameObject.GetComponent<EnemyDeath>().isDead = true;
             bulletAnimator.SetTrigger("Hit");
             moving = false;
+            gameObject.GetComponent<Collider2D>().isTrigger = false;
         }
     }
 }

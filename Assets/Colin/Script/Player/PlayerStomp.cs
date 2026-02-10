@@ -9,10 +9,16 @@ public class PlayerStomp : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Rigidbody2D playerRigidbody;
     [SerializeField] Animator playerAnimator;
+    private GameManager gameManager;
 
     private float rayLength = 0.5f;
     private Vector2 playerBottom;
     private int iFrames;
+
+    private void Awake()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
 
     private void Start()
     {
@@ -28,47 +34,56 @@ public class PlayerStomp : MonoBehaviour
     {
         if (collision.gameObject.layer == 7 )
         {
-            if (playerRigidbody.linearVelocityY < -0.000001 && !collision.gameObject.CompareTag("Boss"))
+            if (gameObject.GetComponent<PlayerController>().invincible)
+            {
+                Destroy(collision.gameObject);
+            }
+            else if (collision.gameObject.CompareTag("Mimic"))
+            {
+                if (collision.gameObject.GetComponent<MimicActivity>().isOpen)
+                {
+                    gameObject.GetComponent<PlayerDeath>().Death();
+                }
+                else
+                {
+                    collision.gameObject.GetComponent<MimicActivity>().stoodOn = true;
+                }
+            }
+            else if (playerRigidbody.linearVelocityY < -0.000001 && !collision.gameObject.CompareTag("Boss"))
             {
                 switch (collision.gameObject.tag)
                 {
                     case "Goblin":
-                        collision.gameObject.GetComponent<GoblinDeath>().Squish();
+                        collision.gameObject.GetComponent<Animator>().enabled = false;
+                        collision.gameObject.GetComponent<EnemyDeath>().Squish();
                         Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
+                        gameManager.AddScore(200);
                         break;
                     case "Skeleton":
-                        break;
-                    case "Mimic":
+                        collision.gameObject.GetComponent<Animator>().SetTrigger("Break");
+                        Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
+                        collision.gameObject.GetComponent<EnemyDeath>().dead = true;
+                        Destroy(collision.gameObject, 2f);
+                        gameManager.AddScore(300);
                         break;
                     case "MiniKnight":
-                        collision.gameObject.GetComponent<GoblinDeath>().GetShot();
+                        collision.gameObject.GetComponent<EnemyDeath>().isDead = true;
+                        Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
+                        gameManager.AddScore(500);
                         break;
                 }
                 //Debug.Log("Destroy Object.");
-               // Debug.Log(playerRigidbody.linearVelocityY);
+                // Debug.Log(playerRigidbody.linearVelocityY);
             }
             else
             {
-                if (gameObject.GetComponent<PlayerController>().invincible)
+
+                if (collision.gameObject.CompareTag("Boss"))
                 {
-                    Destroy(collision.gameObject);
+                    collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                    gameObject.GetComponent<PlayerController>().SwitchPower("Small");
                 }
-                else
-                {
-                    if (collision.gameObject.CompareTag("Mimic"))
-                    {
-                        
-                    }
-                    else
-                    {
-                        if (collision.gameObject.CompareTag("Boss"))
-                        {
-                            collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-                            gameObject.GetComponent<PlayerController>().currentPower = "Small";
-                        }
-                        gameObject.GetComponent<PlayerDeath>().Death();
-                    }
-                }
+                    gameObject.GetComponent<PlayerDeath>().Death();
             }
         }
     }

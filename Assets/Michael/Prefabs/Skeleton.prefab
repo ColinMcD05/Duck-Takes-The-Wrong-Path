@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -3727978382848114928}
   - component: {fileID: -8545425413338473251}
   - component: {fileID: 1084528732364698786}
-  - component: {fileID: 6335334563652059207}
+  - component: {fileID: 695042997051564786}
   m_Layer: 7
   m_Name: Skeleton
   m_TagString: Skeleton
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4354231566380549168, guid: ab13ddf38d6efba47922a78a4293fdf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -200,19 +200,25 @@ MonoBehaviour:
   deathSprite: {fileID: 0}
   isDead: 0
   dead: 0
---- !u!114 &6335334563652059207
-MonoBehaviour:
+--- !u!95 &695042997051564786
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4870359760784000942}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3ffdd2f6744125469219c2c7891e6b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkullScript
-  speed: 2
-  direction: -1
-  sb: {fileID: -3727978382848114928}
-  ss: {fileID: 0}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce257993185ffef46948db0c3ffc0cbe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

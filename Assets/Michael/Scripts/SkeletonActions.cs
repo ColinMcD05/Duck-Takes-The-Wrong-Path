@@ -90,9 +90,9 @@ public class SkeletonActions : MonoBehaviour
         }       
     }
 
-         private void OnCollisionEnter2D(Collision2D collision)
+     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 7)
+        if (collision.gameObject.layer == 7 && !gameObject.GetComponent<EnemyDeath>().dead)
         {
             direction *= -1;
             ss.flipX = !ss.flipX;

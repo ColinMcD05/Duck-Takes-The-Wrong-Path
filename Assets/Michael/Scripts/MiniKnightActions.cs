@@ -60,6 +60,7 @@ public class MiniKnightActions : MonoBehaviour
             axe.GetComponent<AxeMovement>().axeDirection = direction;
             axe.GetComponent<SpriteRenderer>().flipX = mks.flipX;
         }
+        this.gameObject.GetComponent<Animator>().SetTrigger("Throw");
     }
 
     void ChangeDirection()

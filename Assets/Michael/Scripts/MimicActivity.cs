@@ -20,22 +20,28 @@ public class MimicActivity : MonoBehaviour
     {
         if (stoodOn == false)
         {
-            Open();
+            timer -= Time.deltaTime;
+            if (!isOpen && timer == 0)
+            {
+                gameObject.GetComponent<Animator>().SetTrigger("Open"); 
+                Open();
+            }
+            if (isOpen && timer == 0)
+            {
+                Close();
+            }
         }
     }
 
     void Open()
     {
-        timer += Time.deltaTime;
-        if (timer > 3)
-        {
-            transform.localScale += new Vector3(1, 2, 1);
+        timer = 5f;
+        isOpen = true;
+    }
 
-            if (timer > 5)
-            {
-                transform.localScale -= new Vector3(1, 1, 1);
-                timer = 0;
-            }
-        }
+    void Close()
+    {
+        timer = 3f;
+        isOpen = false;
     }
 }

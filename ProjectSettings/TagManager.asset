@@ -19,6 +19,7 @@ TagManager:
   - Knife
   - Lava
   - Goblin
+  - MiniKnight
   layers:
   - Default
   - TransparentFX

@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2180701618497998299, guid: 2f5e1d943fc671e4784f7590a483aa0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -108,6 +108,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 3899287828640490487}
   bulletSpeed: 0
   bulletAnimator: {fileID: -6238222725332377700}
+  moving: 0
 --- !u!70 &146935907026571215
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

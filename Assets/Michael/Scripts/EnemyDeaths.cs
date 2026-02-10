@@ -16,12 +16,13 @@ public class EnemyDeath : MonoBehaviour
         if(isDead)
         {
             GetShot();
-            Destroy(this.gameObject, 3);
+            Destroy(this.gameObject, 1f);
         }
     }
 
     public void Squish()
     {
+        this.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         dead = true;
         enemySprite.sprite = deathSprite;
         Destroy(this.gameObject, 1);
@@ -29,8 +30,8 @@ public class EnemyDeath : MonoBehaviour
 
     public void GetShot()
     {
+        this.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         dead = true;
         transform.position += new Vector3(0f, -1f) * Time.deltaTime * 3f;
     }
-
 }

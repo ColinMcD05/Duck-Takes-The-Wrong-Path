@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3338749442709606003, guid: d3f6635c7f8205c4aa3bf3753bdb1814, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -107,7 +107,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Coins
   fromCrate: 0
   maxHeight: 1
-  audioSource: {fileID: 1593237212022702309}
   coinClip: {fileID: 8300000, guid: 675df13e4533fc546958aee28fa327a1, type: 3}
 --- !u!58 &2920150409872362805
 CircleCollider2D:
