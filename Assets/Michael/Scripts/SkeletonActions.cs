@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class SkeletonActions : MonoBehaviour
 {
+    private bool canMove;
     public float speed = 2f;
     public int direction = -1;
     [SerializeField] private Rigidbody2D sb;
@@ -25,10 +26,13 @@ public class SkeletonActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.x = speed * direction;
-        movement.y = sb.linearVelocity.y;
-        sb.linearVelocity = movement;
-        SetDirection();
+        if (canMove)
+        {
+            movement.x = speed * direction;
+            movement.y = sb.linearVelocity.y;
+            sb.linearVelocity = movement;
+            SetDirection();
+        }
     }
 
     private void OnCollisionStay2D(Collision2D other)
@@ -79,5 +83,10 @@ public class SkeletonActions : MonoBehaviour
                 ss.flipX = true;
             }
         }       
+    }
+
+    private void OnBecameVisible()
+    {
+        canMove = true;
     }
 }
