@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4720496012933480828}
   - component: {fileID: 6515160946965785576}
   - component: {fileID: 3007536206621397585}
+  - component: {fileID: 8861532355768676752}
   m_Layer: 6
   m_Name: Crate_One
   m_TagString: Untagged
@@ -160,3 +161,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8861532355768676752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3977876315626259147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505496e876bbe034190288080f72bb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChestCrate
+  itemType: 
+  used: 0
+  move: 0
+  wormPrefab: {fileID: 3858975732537715134, guid: 84ad6fea08eff8540bf978d829074bf6, type: 3}
+  waterPrefab: {fileID: 2080954221502644496, guid: b65e62635e36139409013d0a222b4d53, type: 3}
+  coinPrefab: {fileID: 8464389376301525484, guid: 80443ee94e263e642970057060e41a87, type: 3}
+  spriteRenderer: {fileID: 4720496012933480828}
+  chestSprites: []
+  invinciblePrefab: {fileID: 3416303174128857121, guid: cf97440729baa9340877c18913b988e7, type: 3}
+  chestAnimator: {fileID: 3007536206621397585}
