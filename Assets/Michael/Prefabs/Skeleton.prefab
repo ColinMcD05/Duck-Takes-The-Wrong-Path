@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 7302750625865517650}
   - component: {fileID: -3727978382848114928}
   - component: {fileID: -8545425413338473251}
-  m_Layer: 0
+  - component: {fileID: 1084528732364698786}
+  - component: {fileID: 6335334563652059207}
+  m_Layer: 7
   m_Name: Skeleton
-  m_TagString: Untagged
+  m_TagString: Skeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,3 +184,35 @@ MonoBehaviour:
   direction: -1
   sb: {fileID: -3727978382848114928}
   ss: {fileID: -8786595006861326165}
+--- !u!114 &1084528732364698786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870359760784000942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d82ec0eef117104a8e7a242e5025f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeath
+  enemySprite: {fileID: -8786595006861326165}
+  deathSprite: {fileID: 0}
+  isDead: 0
+  dead: 0
+--- !u!114 &6335334563652059207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870359760784000942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3ffdd2f6744125469219c2c7891e6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkullScript
+  speed: 2
+  direction: -1
+  sb: {fileID: -3727978382848114928}
+  ss: {fileID: 0}

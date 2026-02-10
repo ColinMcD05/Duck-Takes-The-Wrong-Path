@@ -2,13 +2,14 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GoblinDeath : MonoBehaviour
+public class EnemyDeath : MonoBehaviour
 
 {
 
-    [SerializeField] SpriteRenderer goblinSprite;
+    [SerializeField] SpriteRenderer enemySprite;
     public Sprite deathSprite;
     public bool isDead;
+    public bool dead;
 
     void Update()
     {
@@ -21,12 +22,14 @@ public class GoblinDeath : MonoBehaviour
 
     public void Squish()
     {
-        goblinSprite.sprite = deathSprite;
+        dead = true;
+        enemySprite.sprite = deathSprite;
         Destroy(this.gameObject, 1);
     }
 
     public void GetShot()
     {
+        dead = true;
         transform.position += new Vector3(0f, -1f) * Time.deltaTime * 3f;
     }
 

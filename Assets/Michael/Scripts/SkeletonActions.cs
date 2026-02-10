@@ -26,12 +26,17 @@ public class SkeletonActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead)
         {
             movement.x = speed * direction;
             movement.y = sb.linearVelocity.y;
             sb.linearVelocity = movement;
             SetDirection();
+        }
+
+        else
+        {
+            sb.linearVelocity = new Vector2(0, 0);
         }
     }
 
@@ -83,6 +88,15 @@ public class SkeletonActions : MonoBehaviour
                 ss.flipX = true;
             }
         }       
+    }
+
+         private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            direction *= -1;
+            ss.flipX = !ss.flipX;
+        }
     }
 
     private void OnBecameVisible()

@@ -36,12 +36,17 @@ public class MiniKnightActions : MonoBehaviour
     void Update()
     {
 
-        if (canMove)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead)
         {
             Movement();
             axeThrow();
             ChangeDirection();
         }    
+
+        else
+        {
+            mkb.linearVelocity = new Vector2(0, 0);
+        }
         
     }
 
@@ -50,7 +55,7 @@ public class MiniKnightActions : MonoBehaviour
         attackTimer -= Time.deltaTime;
         if (attackTimer <= 0)
         {
-            attackTimer = Random.Range(2f, 5f);
+            attackTimer = Random.Range(1f, 3f);
             GameObject axe = Instantiate(axePrefab, new Vector3(transform.position.x - mks.bounds.extents.x * direction, transform.position.y), Quaternion.Euler(0f, 0f, -45f * direction));
             axe.GetComponent<AxeMovement>().axeDirection = direction;
             axe.GetComponent<SpriteRenderer>().flipX = mks.flipX;
@@ -91,6 +96,16 @@ public class MiniKnightActions : MonoBehaviour
             moveTimer -= Time.deltaTime;
         }
     }
+    
+         private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            direction *= -1;
+            mks.flipX = !mks.flipX;
+        }
+    }
+
     private void OnBecameVisible()
     {
         canMove = true;
