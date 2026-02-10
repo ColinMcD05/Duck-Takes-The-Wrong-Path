@@ -28,7 +28,7 @@ public class SkullAction : MonoBehaviour
                 collision.gameObject.GetComponent<EnemyDeath>().GetShot();
                 collision.gameObject.GetComponent<EnemyDeath>().direction = direction;
             }
-            else if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Mimic"))
+            else if (Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), new Vector2(1f *direction, 0), gameObject.GetComponent<SpriteRenderer>().bounds.extents.x  + 0.1f * direction, LayerMask.GetMask("Ground")))
             {
                 direction *= -1;
             }

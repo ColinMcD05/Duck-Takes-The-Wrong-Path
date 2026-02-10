@@ -29,6 +29,7 @@ public class EnemyDeath : MonoBehaviour
         this.gameObject.GetComponent<Collider2D>().isTrigger = true;
         dead = true;
         gameObject.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(4 * direction, 3f);
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         Destroy(this.gameObject, 2f);
     }
 }

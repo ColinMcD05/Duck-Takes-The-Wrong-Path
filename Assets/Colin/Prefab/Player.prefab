@@ -230,7 +230,7 @@ MonoBehaviour:
   deathTimer: 0
   upOrDown: 0
   playerAnimator: {fileID: -8788749141476071375}
-  timer: 200
+  timer: 100
   deathAudio: {fileID: 8300000, guid: 7336e291a39ed8a4bb926039e23a63ae, type: 3}
   deathAudioSource: {fileID: 8613051778160655460}
 --- !u!114 &1687637528871428642

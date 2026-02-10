@@ -45,14 +45,24 @@ public class WaterMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 7 && collision.gameObject.CompareTag("Mimic"))
+        if (collision.gameObject.layer == 6 && !collision.gameObject.CompareTag("Mimic"))
         {
             Destroy(this.gameObject, 0.5f);
             bulletAnimator.SetTrigger("Hit");
             moving = false;
             bulletAudio.PlayOneShot(hit, 0.4f);
         }
-        else if ((collision.gameObject.layer == 7 || collision.CompareTag("Mimic")) && !collision.gameObject.CompareTag("Boss"))
+        else if (collision.gameObject.layer == 7 && !collision.gameObject.CompareTag("Boss"))
+        {
+            Destroy(this.gameObject, 0.5f);
+            collision.gameObject.GetComponent<EnemyDeath>().GetShot();
+            collision.gameObject.GetComponent<EnemyDeath>().direction = bulletDirection;
+            bulletAnimator.SetTrigger("Hit");
+            moving = false;
+            gameObject.GetComponent<Collider2D>().isTrigger = false;
+            bulletAudio.PlayOneShot(hit, 0.4f);
+        }
+        else if (collision.gameObject.CompareTag("Mimic"))
         {
             Destroy(this.gameObject, 0.5f);
             collision.gameObject.GetComponent<EnemyDeath>().GetShot();

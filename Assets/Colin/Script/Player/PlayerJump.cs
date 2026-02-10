@@ -51,11 +51,11 @@ public class PlayerJump : MonoBehaviour
         {
             return true;
         }
-        else if (Physics2D.Raycast(new Vector2(transform.position.x + playerHalfWidth, transform.position.y), Vector2.down, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")))
+        else if (Physics2D.Raycast(new Vector2(transform.position.x + playerHalfWidth - 0.5f, transform.position.y), Vector2.down, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")))
         {
             return true;
         }
-        else if (Physics2D.Raycast(new Vector2(transform.position.x + playerHalfWidth, transform.position.y), Vector2.down, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")))
+        else if (Physics2D.Raycast(new Vector2(transform.position.x - playerHalfWidth + 0.5f, transform.position.y), Vector2.down, playerHalfHeight + 0.1f, LayerMask.GetMask("Ground")))
         {
             return true;
         }

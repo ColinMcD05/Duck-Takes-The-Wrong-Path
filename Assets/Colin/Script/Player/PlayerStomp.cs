@@ -92,6 +92,7 @@ public class PlayerStomp : MonoBehaviour
                 {
                     collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
                     gameObject.GetComponent<PlayerController>().SwitchPower("Small");
+                    Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
                 }
                 if (collision.gameObject.CompareTag("Skull"))
                 {
