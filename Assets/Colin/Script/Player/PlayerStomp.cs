@@ -40,17 +40,6 @@ public class PlayerStomp : MonoBehaviour
             {
                 Destroy(collision.gameObject);
             }
-            else if (collision.gameObject.CompareTag("Mimic"))
-            {
-                if (collision.gameObject.GetComponent<MimicActivity>().isOpen)
-                {
-                    gameObject.GetComponent<PlayerDeath>().Death();
-                }
-                else
-                {
-                    collision.gameObject.GetComponent<MimicActivity>().stoodOn = true;
-                }
-            }
             else if (playerRigidbody.linearVelocityY < -0.000001 && !collision.gameObject.CompareTag("Boss"))
             {
                 switch (collision.gameObject.tag)
@@ -87,6 +76,17 @@ public class PlayerStomp : MonoBehaviour
                     gameObject.GetComponent<PlayerController>().SwitchPower("Small");
                 }
                 gameObject.GetComponent<PlayerDeath>().Death();
+            }
+        }
+        else if (collision.gameObject.CompareTag("Mimic"))
+        {
+            if (collision.gameObject.GetComponent<MimicActivity>().isOpen)
+            {
+                gameObject.GetComponent<PlayerDeath>().Death();
+            }
+            else
+            {
+                collision.gameObject.GetComponent<MimicActivity>().stoodOn = true;
             }
         }
     }

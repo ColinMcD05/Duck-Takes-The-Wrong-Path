@@ -10,7 +10,7 @@ public class MiniKnightActions : MonoBehaviour
     public int direction = -1;
     public int moveDirection = -1;
     public float wanderRange = 5f;
-    private GameObject player;
+    private static GameObject player;
     [SerializeField] private Rigidbody2D mkb;
     [SerializeField] private SpriteRenderer mks;
     public GameObject axePrefab;
@@ -36,11 +36,12 @@ public class MiniKnightActions : MonoBehaviour
     void Update()
     {
 
-        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !GameObject.Find("Player").GetComponent<PlayerDeath>().dead)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !player.GetComponent<PlayerDeath>().dead)
         {
             Movement();
             axeThrow();
             ChangeDirection();
+            gameObject.GetComponent<Animator>().enabled = true;
         }    
 
         else

@@ -21,12 +21,12 @@ public class MimicActivity : MonoBehaviour
         if (stoodOn == false && canMove)
         {
             timer -= Time.deltaTime;
-            if (!isOpen && timer == 0)
+            if (!isOpen && timer <= 0)
             {
                 gameObject.GetComponent<Animator>().SetTrigger("Open"); 
                 Open();
             }
-            if (isOpen && timer == 0)
+            else if (isOpen && timer <= 0)
             {
                 Close();
             }
@@ -35,7 +35,7 @@ public class MimicActivity : MonoBehaviour
 
     void Open()
     {
-        timer = 1.5f;
+        timer = 4f;
         isOpen = true;
     }
 

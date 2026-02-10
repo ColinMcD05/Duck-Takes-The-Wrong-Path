@@ -54,7 +54,7 @@ public class PlayerDeath : MonoBehaviour
             // If player still has live, restart current level
             if (playerController.currentPower == "Small")
             {
-                gameObject.GetComponent<Rigidbody2D>().linearVelocityY = 0;
+            gameObject.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
                 dead = true;
                 gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
                 gameObject.GetComponent<Collider2D>().isTrigger = true;
