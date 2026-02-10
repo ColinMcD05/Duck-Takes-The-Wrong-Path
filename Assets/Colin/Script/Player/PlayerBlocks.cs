@@ -20,8 +20,11 @@ public class PlayerBlocks : MonoBehaviour
             chest.move = true;
             if (playerController.currentPower != "Small" || collision.gameObject.CompareTag("Chest"))
             {
-                chest.SpawnItem();
-                blockAudio.PlayOneShot(spawn, 0.5f);
+                if (!chest.empty)
+                {
+                    chest.SpawnItem();
+                    blockAudio.PlayOneShot(spawn, 0.5f);
+                }
             }
             else
             {

@@ -11,7 +11,7 @@ public class ChestCrate : MonoBehaviour
     private float currentPosition = 0;
     private int moveDirection;
     private float origin;
-    private bool empty;
+    public bool empty;
     private PlayerController playerController;
     [SerializeField] GameObject wormPrefab;
     [SerializeField] GameObject waterPrefab;
@@ -94,7 +94,8 @@ public class ChestCrate : MonoBehaviour
                     used = true;
                 }
             }
-                transform.Translate(new Vector3(0f, 0.1f * moveDirection, 0f) * Time.deltaTime * 15f);
+            transform.Translate(new Vector3(0f, 0.1f * moveDirection, 0f) * Time.deltaTime * 15f);
+            transform.localScale += new Vector3(1f, 1f) * moveDirection * Time.deltaTime;
             currentPosition += 0.1f * moveDirection * Time.deltaTime * 15f;
         }
     }
