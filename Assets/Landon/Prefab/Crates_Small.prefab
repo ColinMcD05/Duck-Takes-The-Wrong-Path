@@ -1,0 +1,312 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1704577375962212624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405960143408847603}
+  m_Layer: 0
+  m_Name: Crates_Small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &405960143408847603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704577375962212624}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.808, y: -2.0109851, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7655264830152336165}
+  - {fileID: 3067584369495957167}
+  - {fileID: 8715444425917904566}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2980851678387762674
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 405960143408847603}
+    m_Modifications:
+    - target: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_Name
+      value: Crate_One
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9768648
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5221775220661845467}
+  m_SourcePrefab: {fileID: 100100000, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+--- !u!1 &2191667110902118201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+  m_PrefabInstance: {fileID: 2980851678387762674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5221775220661845467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2191667110902118201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505496e876bbe034190288080f72bb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChestCrate
+  itemType: 
+  used: 0
+  move: 0
+  wormPrefab: {fileID: 0}
+  waterPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  chestSprites: []
+  invinciblePrefab: {fileID: 0}
+  chestAnimator: {fileID: 0}
+--- !u!4 &7655264830152336165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+  m_PrefabInstance: {fileID: 2980851678387762674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4292370817525096545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 405960143408847603}
+    m_Modifications:
+    - target: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_Name
+      value: Crate_One (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2270803378304230389}
+  m_SourcePrefab: {fileID: 100100000, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+--- !u!1 &911365306046341802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+  m_PrefabInstance: {fileID: 4292370817525096545}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2270803378304230389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911365306046341802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505496e876bbe034190288080f72bb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChestCrate
+  itemType: 
+  used: 0
+  move: 0
+  wormPrefab: {fileID: 0}
+  waterPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  chestSprites: []
+  invinciblePrefab: {fileID: 0}
+  chestAnimator: {fileID: 0}
+--- !u!4 &8715444425917904566 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+  m_PrefabInstance: {fileID: 4292370817525096545}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7633836356303603832
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 405960143408847603}
+    m_Modifications:
+    - target: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_Name
+      value: Crate_One (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9779997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5568758192525505702}
+  m_SourcePrefab: {fileID: 100100000, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+--- !u!4 &3067584369495957167 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+  m_PrefabInstance: {fileID: 7633836356303603832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6828746584321657523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
+  m_PrefabInstance: {fileID: 7633836356303603832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5568758192525505702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6828746584321657523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505496e876bbe034190288080f72bb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChestCrate
+  itemType: 
+  used: 0
+  move: 0
+  wormPrefab: {fileID: 0}
+  waterPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  chestSprites: []
+  invinciblePrefab: {fileID: 0}
+  chestAnimator: {fileID: 0}
