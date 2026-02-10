@@ -28,7 +28,7 @@ public class UI : MonoBehaviour
     {
         if (Instance != null)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             return;
         }
         else
