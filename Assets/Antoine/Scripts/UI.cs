@@ -11,7 +11,7 @@ public class UI : MonoBehaviour
     public GameObject coinsUI;
     public GameObject timerUI;
     public GameObject livesUI;
-    private UI Instance;
+    private  static UI Instance;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI coinsText;
     public TextMeshProUGUI timerText;
