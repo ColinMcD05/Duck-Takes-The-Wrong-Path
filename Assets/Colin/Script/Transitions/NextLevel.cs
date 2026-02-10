@@ -7,7 +7,7 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
             GameObject.Find("Player").GetComponent<PlayerDeath>().timer = 200;
         }
     }

@@ -18,6 +18,7 @@ TagManager:
   - Boss
   - Knife
   - Lava
+  - Goblin
   layers:
   - Default
   - TransparentFX

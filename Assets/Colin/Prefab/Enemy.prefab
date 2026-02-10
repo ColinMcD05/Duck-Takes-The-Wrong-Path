@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 7557460577191247841}
   - component: {fileID: 1621255799548512940}
   - component: {fileID: -6916250726036475558}
+  - component: {fileID: 9042613026454383377}
+  - component: {fileID: -3204616990990015012}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Enemy
+  m_TagString: Goblin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,3 +167,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &9042613026454383377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7095583563582131809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0264900bff3ac8d4cb2fcafa03078bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoblinMovement
+  speed: 2
+  direction: -1
+  gb: {fileID: -6916250726036475558}
+  gs: {fileID: 7557460577191247841}
+--- !u!114 &-3204616990990015012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7095583563582131809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d82ec0eef117104a8e7a242e5025f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoblinDeath
+  goblinSprite: {fileID: 7557460577191247841}
+  deathSprite: {fileID: -2216099811751503221, guid: 9183eb6f26fc6fd4abdb6b7d3da8e155, type: 3}
+  isDead: 0

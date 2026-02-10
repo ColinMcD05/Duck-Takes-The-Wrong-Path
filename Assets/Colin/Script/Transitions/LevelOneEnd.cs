@@ -10,7 +10,13 @@ public class LevelOneEnd : MonoBehaviour
     private bool levelEnd;
     private float time;
     [SerializeField] Sprite moatSprite;
+    private GameManager gameManager;
     private int moveMoat;
+
+    private void Awake()
+    {
+        gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
+    }
 
     void Update()
     {
@@ -41,6 +47,7 @@ public class LevelOneEnd : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            gameManager.playerLastPower = collision.gameObject.GetComponent<PlayerController>().currentPower;
             collision.gameObject.GetComponent<PlayerMovement>().inControl = false;
             if (collision.gameObject.GetComponent<PlayerJump>().GetIsGrounded())
             {

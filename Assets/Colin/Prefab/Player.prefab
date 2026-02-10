@@ -139,7 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241404a541299c941b993d87036e6720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  lives: 3
   currentPower: Small
   invincible: 0
   spriteRenderer: {fileID: 5895836147131981295}
@@ -219,6 +218,7 @@ MonoBehaviour:
   deathTimer: 0
   upOrDown: 0
   playerAnimator: {fileID: -8788749141476071375}
+  timer: 200
 --- !u!114 &1687637528871428642
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,31 +1,32 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class MiniKnightActions : MonoBehaviour
 {
+    private bool canMove;
     public float speed = 2f;
     public int direction = -1;
-    public float jumpHeight = 3f;
-    public float jumpTimerMin = 1.0f;
-    public float jumpTimerMax = 3.0f;
+    public int moveDirection = -1;
     public float wanderRange = 5f;
-    private Vector2 startPosition;
+    private GameObject player;
     [SerializeField] private Rigidbody2D mkb;
     [SerializeField] private SpriteRenderer mks;
-    private float halfWidth;
-    private float halfHeight;
-    private Vector2 movement;
-    private bool isGrounded;
-    public GameObject axe;
+    public GameObject axePrefab;
     public Transform axePos;
     public float timer;
+    public float moveTimer;
+    public float attackTimer = 1f;
+
+
+    private void Awake()
+    {
+        player = GameObject.Find("Player");
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        halfWidth = mks.bounds.extents.x;
-        halfHeight = mks.bounds.extents.y;
-        startPosition = transform.position;
         mkb = GetComponent<Rigidbody2D>();
         mks = GetComponent<SpriteRenderer>();
         mks.flipX = direction == -1 ? false : true;
@@ -34,91 +35,65 @@ public class MiniKnightActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer > 1.5)
+
+        if (canMove)
         {
-            if (isGrounded)
-            {
-                jump();
-            }
-
-            if (timer > 2)
-            {
-                timer = 0;
-                axeThrow();
-            }
-        }
-        movement.x = speed * direction;
-        movement.y = mkb.linearVelocity.y;
-        mkb.linearVelocity = movement;
-        SetDirection();
-    }
-
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-    }
-
-    void SetDirection()
-    {
-        if (!isGrounded) return;
-
-
-        Vector2 rightPos = transform.position;
-        Vector2 leftPos = transform.position;
-        rightPos.x += halfWidth;
-        leftPos.x -= halfWidth;
-
-        if (mkb.linearVelocity.x > 0) {
-            if (Physics2D.Raycast(transform.position, Vector2.right, halfWidth + 0.1f, LayerMask.GetMask("Ground")))
-            {
-                direction *= -1;
-                mks.flipX = false;
-            }
-            else if (!Physics2D.Raycast(rightPos, Vector2.down, halfHeight + 0.1f, LayerMask.GetMask("Ground")))
-            {
-                direction *= -1;
-                mks.flipX = false;
-            }
-        }
-
-        else if (mkb.linearVelocity.x < 0)
-        {
-            if (Physics2D.Raycast(transform.position, Vector2.left, halfWidth + 0.1f, LayerMask.GetMask("Ground")))
-            {
-                direction *= -1;
-                mks.flipX = true;
-            }
-            else if (!Physics2D.Raycast(leftPos, Vector2.down, halfHeight + 0.1f, LayerMask.GetMask("Ground")))
-            {
-                direction *= -1;
-                mks.flipX = true;
-            }
-        }
-        float distance = Vector2.Distance(transform.position, startPosition);
+            Movement();
+            axeThrow();
+            ChangeDirection();
+        }    
         
-        if (distance > wanderRange)
-        {
-            direction *= -1;
-            mks.flipX = !mks.flipX;
-        }
-    }
-
-    void jump()
-    {
-        mkb.AddForce(new Vector2(direction, jumpHeight), ForceMode2D.Impulse);
     }
 
     void axeThrow()
     {
-        Instantiate(axe, axePos.position, Quaternion.identity);
+        attackTimer -= Time.deltaTime;
+        if (attackTimer <= 0)
+        {
+            attackTimer = Random.Range(2f, 5f);
+            GameObject axe = Instantiate(axePrefab, new Vector3(transform.position.x - mks.bounds.extents.x * direction, transform.position.y), Quaternion.Euler(0f, 0f, -45f * direction));
+            axe.GetComponent<AxeMovement>().axeDirection = direction;
+            axe.GetComponent<SpriteRenderer>().flipX = mks.flipX;
+        }
+    }
+
+    void ChangeDirection()
+    {
+        if (CheckDirection() > 0)
+        {
+            mks.flipX = true;
+            direction = 1;
+        }
+        else
+        {
+            mks.flipX = false;
+            direction = -1;
+        }
+    }
+
+    float CheckDirection()
+    {
+        Vector3 forward = transform.TransformDirection(Vector3.right);
+        Vector3 toOther = Vector3.Normalize(player.transform.position - transform.position);
+        return Vector3.Dot(forward, toOther);
+    }
+
+    void Movement()
+    {
+        if (moveTimer <= 0)
+        {
+            moveTimer = 0.75f;
+            moveDirection *= -1;
+        }
+        else
+        {
+            mkb.position += new Vector2(0.5f, 0f) * Time.deltaTime * speed * moveDirection;
+            moveTimer -= Time.deltaTime;
+        }
+    }
+    private void OnBecameVisible()
+    {
+        canMove = true;
     }
 
 }

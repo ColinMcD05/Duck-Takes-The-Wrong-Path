@@ -28,6 +28,15 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     public void AddScore(int earnedScore)
     {
         score += earnedScore;
