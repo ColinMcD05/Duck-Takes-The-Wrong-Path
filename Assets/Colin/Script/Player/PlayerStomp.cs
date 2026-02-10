@@ -28,7 +28,7 @@ public class PlayerStomp : MonoBehaviour
     {
         if (collision.gameObject.layer == 7 )
         {
-            if (playerRigidbody.linearVelocityY < -0.000001 && collision.gameObject.CompareTag("Boss"))
+            if (playerRigidbody.linearVelocityY < -0.000001 && !collision.gameObject.CompareTag("Boss"))
             {
                 Destroy(collision.gameObject);
                 //Debug.Log("Destroy Object.");

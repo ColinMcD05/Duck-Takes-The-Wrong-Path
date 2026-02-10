@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 6765702706390812214}
   - component: {fileID: 765645994356023345}
   - component: {fileID: 6053125806481345049}
+  - component: {fileID: -3682774833909766198}
   m_Layer: 7
   m_Name: MiniKnight
   m_TagString: Enemy
@@ -212,12 +213,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniKnightActions
   speed: 2
   direction: -1
-  jumpHeight: 0
-  jumpTimerMin: 1
-  jumpTimerMax: 3
+  moveDirection: -1
   wanderRange: 5
   mkb: {fileID: 765645994356023345}
   mks: {fileID: 3244881874092196462}
-  axe: {fileID: 724799919356481589, guid: 0caf04b23bf9ae743870e4d5206ddbfb, type: 3}
+  axePrefab: {fileID: 724799919356481589, guid: 0caf04b23bf9ae743870e4d5206ddbfb, type: 3}
   axePos: {fileID: 8749737560597993452}
   timer: 0
+  moveTimer: 0
+  attackTimer: 1
+--- !u!114 &-3682774833909766198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5392576120069584141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d82ec0eef117104a8e7a242e5025f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeath
+  enemySprite: {fileID: 3244881874092196462}
+  deathSprite: {fileID: 0}
+  isDead: 0
+  dead: 0

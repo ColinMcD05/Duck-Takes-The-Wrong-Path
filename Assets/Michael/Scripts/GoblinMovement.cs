@@ -23,12 +23,17 @@ public class GoblinMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead)
         {
             movement.x = speed * direction;
             movement.y = gb.linearVelocity.y;
             gb.linearVelocity = movement;
             SetDirection();
+        }
+
+        else
+        {
+            gb.linearVelocity = new Vector2(0, 0);
         }
     }
 
@@ -50,8 +55,18 @@ public class GoblinMovement : MonoBehaviour
                 direction *= -1;
                 gs.flipX = true;
             }
-        }       
+        }
     }
+
+     private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            direction *= -1;
+            gs.flipX = !gs.flipX;
+        }
+    }
+
     private void OnBecameVisible()
     {
         canMove = true;
