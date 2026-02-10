@@ -37,7 +37,6 @@ public class PlayerJump : MonoBehaviour
         {
             if (isJumping && GetIsGrounded())
             {
-
                 Jump();
             }
         }

@@ -279,7 +279,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8788749141476071375, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 567836050910076720, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_Name
@@ -500,6 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   player: {fileID: 550991495}
   cameraRigidbody: {fileID: 106011284}
+  inControl: 0
 --- !u!50 &106011284
 Rigidbody2D:
   serializedVersion: 5
@@ -1584,17 +1585,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3204616990990015012, guid: ed838ec0208fef8438a57337beaaacf3, type: 3}
+      propertyPath: deathSprite
+      value: 
+      objectReference: {fileID: -8235935141505239266, guid: 1a99290355114184c84ba28f5d8a82f9, type: 3}
     - target: {fileID: 1621255799548512940, guid: ed838ec0208fef8438a57337beaaacf3, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4642385380826563061, guid: ed838ec0208fef8438a57337beaaacf3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.15
+      value: -3.26
       objectReference: {fileID: 0}
     - target: {fileID: 4642385380826563061, guid: ed838ec0208fef8438a57337beaaacf3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.24
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 4642385380826563061, guid: ed838ec0208fef8438a57337beaaacf3, type: 3}
       propertyPath: m_LocalPosition.z

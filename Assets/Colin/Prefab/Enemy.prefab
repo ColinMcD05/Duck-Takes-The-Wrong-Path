@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -3204616990990015012}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Enemy
+  m_TagString: Goblin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -197,3 +197,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GoblinDeath
   goblinSprite: {fileID: 7557460577191247841}
   deathSprite: {fileID: -2216099811751503221, guid: 9183eb6f26fc6fd4abdb6b7d3da8e155, type: 3}
+  isDead: 0
