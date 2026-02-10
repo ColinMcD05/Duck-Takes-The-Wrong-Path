@@ -49,31 +49,35 @@ public class PlayerDeath : MonoBehaviour
 
     public void Death()
     {
-        // If player still has live, restart current level
-        if (playerController.currentPower == "Small")
+        if (playerMovement.inControl)
         {
-            dead = true;
-            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-            GetComponent<Animator>().enabled = false;
-            gameManager.lives -= 1;
-            playerController.ChangeSprite(playerController.sprite[5]);
-            if (gameManager.lives == 0)
+            // If player still has live, restart current level
+            if (playerController.currentPower == "Small")
             {
-                playerMovement.inControl = false;
-                Invoke("RestartGame", 4f);
-                // Debug.Log(gameManager.lives);
+                gameObject.GetComponent<Rigidbody2D>().linearVelocityY = 0;
+                dead = true;
+                gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                GetComponent<Animator>().enabled = false;
+                gameManager.lives -= 1;
+                playerController.ChangeSprite(playerController.sprite[5]);
+                if (gameManager.lives == 0)
+                {
+                    playerMovement.inControl = false;
+                    Invoke("RestartGame", 4f);
+                    // Debug.Log(gameManager.lives);
+                }
+                // Else, restart the game
+                else
+                {
+                    playerMovement.inControl = false;
+                    // Must change this, but need to wait till main menu scene is made, make game reset in game manager
+                    Invoke("RestartLevel", 4f);
+                }
             }
-            // Else, restart the game
             else
             {
-                playerMovement.inControl = false;
-                // Must change this, but need to wait till main menu scene is made, make game reset in game manager
-                Invoke("RestartLevel", 4f);
+                gameObject.GetComponent<PlayerPowers>().Shrink();
             }
-        }
-        else
-        {
-            gameObject.GetComponent<PlayerPowers>().Shrink();
         }
     }
 

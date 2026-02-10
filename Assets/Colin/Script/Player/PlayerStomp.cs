@@ -30,7 +30,20 @@ public class PlayerStomp : MonoBehaviour
         {
             if (playerRigidbody.linearVelocityY < -0.000001 && !collision.gameObject.CompareTag("Boss"))
             {
-                Destroy(collision.gameObject);
+                switch (collision.gameObject.tag)
+                {
+                    case "Goblin":
+                        collision.gameObject.GetComponent<GoblinDeath>().Squish();
+                        Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
+                        break;
+                    case "Skeleton":
+                        break;
+                    case "Mimic":
+                        break;
+                    case "MiniKnight":
+                        collision.gameObject.GetComponent<GoblinDeath>().GetShot();
+                        break;
+                }
                 //Debug.Log("Destroy Object.");
                // Debug.Log(playerRigidbody.linearVelocityY);
             }
