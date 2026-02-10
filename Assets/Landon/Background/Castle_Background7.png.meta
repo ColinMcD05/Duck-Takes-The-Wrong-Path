@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 558cd936b883c0c489303aad1d4f7ba6
+guid: 2c8e1e84b5026034d84aa8ec609c7907
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4420279451290076041
-    second: Daytime Background_0
+      213: -8104634155935138507
+    second: Castle_Background7_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Daytime Background_0
+      name: Castle_Background7_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9838a16cdbcf75d30800000000000000
-      internalID: 4420279451290076041
+      spriteID: 53dfcf4ec2e868f80800000000000000
+      internalID: -8104634155935138507
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Daytime Background_0: 4420279451290076041
+      Castle_Background7_0: -8104634155935138507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
