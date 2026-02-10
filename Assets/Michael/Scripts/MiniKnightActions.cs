@@ -36,7 +36,7 @@ public class MiniKnightActions : MonoBehaviour
     void Update()
     {
 
-        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !GameObject.Find("Player").GetComponent<PlayerDeath>().dead)
         {
             Movement();
             axeThrow();
@@ -45,6 +45,7 @@ public class MiniKnightActions : MonoBehaviour
 
         else
         {
+            gameObject.GetComponent<Animator>().enabled = false;
             mkb.linearVelocity = new Vector2(0, 0);
         }
         

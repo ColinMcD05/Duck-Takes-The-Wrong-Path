@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public float leftClamp;
     public bool inControl;
     [SerializeField] Animator playerAnimator;
+    [SerializeField] AudioSource playerAudio;
+    [SerializeField] AudioClip quack;
 
     void Start()
     {
@@ -35,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
             playerAnimator.SetTrigger("Quack");
             inControl = false;
             Invoke("GainControl", 0.8f);
+            playerAudio.PlayOneShot(quack, 0.7f);
         }
 
         if (Input.GetKeyDown(KeyCode.R))

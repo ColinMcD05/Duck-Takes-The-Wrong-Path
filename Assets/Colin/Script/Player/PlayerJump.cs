@@ -9,6 +9,8 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float maxHeight = 6;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] Animator playerAnimator;
+    [SerializeField] AudioSource jumpAudio;
+    [SerializeField] AudioClip jump;
 
     private bool isJumping;
 
@@ -49,6 +51,7 @@ public class PlayerJump : MonoBehaviour
 
     void Jump()
     {
+        jumpAudio.PlayOneShot(jump, 0.3f);
         playerRigidbody.linearVelocity = new Vector2(playerRigidbody.linearVelocity.x, 0f);
         playerRigidbody.AddForce(Vector2.up * maxHeight, ForceMode2D.Impulse);
     }

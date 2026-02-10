@@ -12,6 +12,7 @@ public class LevelOneEnd : MonoBehaviour
     [SerializeField] Sprite moatSprite;
     private GameManager gameManager;
     private int moveMoat;
+    [SerializeField] AudioClip levelEndAudio;
 
     private void Awake()
     {
@@ -49,6 +50,10 @@ public class LevelOneEnd : MonoBehaviour
         {
             gameManager.playerLastPower = collision.gameObject.GetComponent<PlayerController>().currentPower;
             collision.gameObject.GetComponent<PlayerMovement>().inControl = false;
+            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
+            GameObject.Find("Music").GetComponent<AudioSource>().Stop();
+            GameObject.Find("Music").GetComponent<AudioSource>().loop = true;
+            GameObject.Find("Music").GetComponent<AudioSource>().PlayOneShot(levelEndAudio, 1f);
             if (collision.gameObject.GetComponent<PlayerJump>().GetIsGrounded())
             {
                 collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;

@@ -9,17 +9,20 @@ EditorBuildSettings:
     path: Assets/Colin/Scenes/MainMenu.unity
     guid: 19316b8f479ff1a4e8e1cfc704c02c6d
   - enabled: 1
-    path: Assets/Colin/Scenes/Test scene.unity
-    guid: 536ffa6c6d8d75d43805a0360d2fe1a1
-  - enabled: 1
     path: Assets/Greg/Scenes/Level1.unity
     guid: bc5e3b4e0c36b85479429b2597375cf7
   - enabled: 1
     path: Assets/Landon/Level 1-2.unity
     guid: 71dfea5f4634fe642a38fb3748de560a
   - enabled: 1
+    path: Assets/Colin/Scenes/Win.unity
+    guid: bf60a5064b7953d479e2acab46fb1553
+  - enabled: 1
     path: Assets/Colin/Scenes/GameOver.unity
     guid: 5715de10b6fb4f64ca6d45ca73c97205
+  - enabled: 1
+    path: Assets/Colin/Scenes/Test scene.unity
+    guid: 536ffa6c6d8d75d43805a0360d2fe1a1
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02

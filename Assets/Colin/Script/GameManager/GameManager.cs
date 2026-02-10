@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public string playerLastPower;
     public int lives = 3;
     public int level;
+    public AudioClip oneUp;
 
     void Awake()
     {
@@ -45,8 +46,9 @@ public class GameManager : MonoBehaviour
     public void AddCoin(int earnedCoin)
     {
         coins += earnedCoin;
-        if (coins == 100)
+        if (coins == 40)
         {
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(oneUp, 0.5f);
             lives++;
             coins = 0;
         }

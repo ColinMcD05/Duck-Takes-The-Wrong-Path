@@ -7,7 +7,10 @@ public class PlayerBlocks : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Rigidbody2D playerRigidbody;
     [SerializeField] PlayerController playerController;
-    
+    [SerializeField] AudioSource blockAudio;
+    [SerializeField] AudioClip hit;
+    [SerializeField] AudioClip spawn;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         ChestCrate chest = collision.gameObject.GetComponent<ChestCrate>();
@@ -18,6 +21,11 @@ public class PlayerBlocks : MonoBehaviour
             if (playerController.currentPower != "Small" || collision.gameObject.CompareTag("Chest"))
             {
                 chest.SpawnItem();
+                blockAudio.PlayOneShot(spawn, 0.5f);
+            }
+            else
+            {
+                blockAudio.PlayOneShot(hit, 0.3f);
             }
         }
     }

@@ -23,7 +23,7 @@ public class GoblinMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !GameObject.Find("Player").GetComponent<PlayerDeath>().dead)
         {
             movement.x = speed * direction;
             movement.y = gb.linearVelocity.y;
@@ -34,6 +34,7 @@ public class GoblinMovement : MonoBehaviour
         else
         {
             gb.linearVelocity = new Vector2(0, 0);
+            gameObject.GetComponent<Animator>().enabled = false;
         }
     }
 

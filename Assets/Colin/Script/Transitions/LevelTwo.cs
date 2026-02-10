@@ -19,7 +19,11 @@ public class LevelTwo : MonoBehaviour
     {
         if (levelEnd)
         {
-
+            time += Time.deltaTime;
+            if (time >= 0.2f)
+            {
+                TransitionMovement();
+            }
         }
     }
 
@@ -45,10 +49,11 @@ public class LevelTwo : MonoBehaviour
 
     void TransitionMovement()
     {
-        if (GameObject.Find("Player").transform.position.x < 84)
+        if (GameObject.Find("Player").transform.position.x < 204.62f)
         {
             GameObject.Find("Player").GetComponent<Animator>().SetBool("IsWalking", true);
             GameObject.Find("Player").transform.position += new Vector3(1f, 0f) * Time.deltaTime * GameObject.Find("Player").GetComponent<PlayerMovement>().playerSpeed;
+            GameObject.Find("MainCamera").transform.position += new Vector3(1f, 0f) * Time.deltaTime * GameObject.Find("Player").GetComponent<PlayerMovement>().playerSpeed;
         }
         else
         {

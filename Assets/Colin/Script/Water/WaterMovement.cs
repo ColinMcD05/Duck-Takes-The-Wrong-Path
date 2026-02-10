@@ -10,6 +10,8 @@ public class WaterMovement : MonoBehaviour
     public float bulletSpeed;
     [SerializeField] Animator bulletAnimator;
     public bool moving;
+    [SerializeField] AudioSource bulletAudio;
+    [SerializeField] AudioClip hit;
 
     private void Awake()
     {
@@ -48,6 +50,7 @@ public class WaterMovement : MonoBehaviour
             Destroy(this.gameObject, 0.5f);
             bulletAnimator.SetTrigger("Hit");
             moving = false;
+            bulletAudio.PlayOneShot(hit, 0.4f);
         }
         else if (collision.gameObject.layer == 7 && !collision.gameObject.CompareTag("Boss"))
         {
@@ -56,6 +59,7 @@ public class WaterMovement : MonoBehaviour
             bulletAnimator.SetTrigger("Hit");
             moving = false;
             gameObject.GetComponent<Collider2D>().isTrigger = false;
+            bulletAudio.PlayOneShot(hit, 0.4f);
         }
     }
 }

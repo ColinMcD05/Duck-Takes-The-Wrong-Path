@@ -65,6 +65,10 @@ public class ChestCrate : MonoBehaviour
             {
                 GameObject coinSpawned = Instantiate(coinPrefab, transform.position, Quaternion.identity);
                 coinSpawned.GetComponent<Coins>().fromCrate = true;
+                if (gameObject.CompareTag("Crate"))
+                {
+                    Break();
+                }
             }
             else
             {
@@ -101,6 +105,8 @@ public class ChestCrate : MonoBehaviour
 
     public void Break()
     {
-        Destroy(this.gameObject);
+        chestAnimator.SetTrigger("Break");
+        Destroy(this.gameObject, 0.5f);
+        gameObject.GetComponent<Collider2D>().isTrigger = true;
     }
 }

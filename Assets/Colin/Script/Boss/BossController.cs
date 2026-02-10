@@ -93,7 +93,7 @@ public class BossController : MonoBehaviour
         if (attackTimer <= 0)
         {
             float yAttackPosition = Random.Range(transform.position.y - enemySprite.bounds.extents.y * 0.75f, transform.position.y + enemySprite.bounds.extents.y * 0.75f);
-            attackTimer = Random.Range(2f, 5f);
+            attackTimer = Random.Range(0.5f, 3f);
             GameObject bullet = Instantiate(knifePrefab, new Vector3(transform.position.x - enemySprite.bounds.extents.x, yAttackPosition), Quaternion.Euler(0f,0f,-45f*bossDirection));
             bullet.GetComponent<Knife>().bulletDirection = bossDirection;
             bullet.GetComponent<SpriteRenderer>().flipX = enemySprite.flipX;

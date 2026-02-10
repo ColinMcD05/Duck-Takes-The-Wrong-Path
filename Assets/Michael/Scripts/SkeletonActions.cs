@@ -26,7 +26,7 @@ public class SkeletonActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !GameObject.Find("Player").GetComponent<PlayerDeath>().dead)
         {
             movement.x = speed * direction;
             movement.y = sb.linearVelocity.y;
@@ -37,6 +37,7 @@ public class SkeletonActions : MonoBehaviour
         else
         {
             sb.linearVelocity = new Vector2(0, 0);
+            gameObject.GetComponent<Animator>().enabled = false;
         }
     }
 

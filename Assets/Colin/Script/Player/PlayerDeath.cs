@@ -10,7 +10,7 @@ public class PlayerDeath : MonoBehaviour
     private PlayerController playerController;
     private PlayerMovement playerMovement;
     private UI gameUI;
-    private bool dead;
+    public bool dead;
     public int deathMaxHeight;
     public int deathCurrentHeight;
     public float deathTimer;
@@ -19,6 +19,7 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] Animator playerAnimator;
     public float timer;
     [SerializeField] AudioClip deathAudio;
+    [SerializeField] AudioSource deathAudioSource;
 
     private void Awake()
     {
@@ -50,17 +51,18 @@ public class PlayerDeath : MonoBehaviour
 
     public void Death()
     {
-        if (playerMovement.inControl)
-        {
             // If player still has live, restart current level
             if (playerController.currentPower == "Small")
             {
                 gameObject.GetComponent<Rigidbody2D>().linearVelocityY = 0;
                 dead = true;
                 gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                gameObject.GetComponent<Collider2D>().isTrigger = true;
                 GetComponent<Animator>().enabled = false;
+                deathAudioSource.PlayOneShot(gameObject.GetComponent<PlayerPowers>().shrinking, 0.7f);
                 gameManager.lives -= 1;
                 playerController.ChangeSprite(playerController.sprite[5]);
+                GameObject.Find("Music").GetComponent<AudioSource>().Stop();
                 if (gameManager.lives == 0)
                 {
                     playerMovement.inControl = false;
@@ -79,7 +81,6 @@ public class PlayerDeath : MonoBehaviour
             {
                 gameObject.GetComponent<PlayerPowers>().Shrink();
             }
-        }
     }
 
     void DeathMovement()
@@ -93,7 +94,8 @@ public class PlayerDeath : MonoBehaviour
             }
         }
         else if ((deathTimer >= 1.5f && deathTimer < 3) || (deathTimer >= 3.25f))
-        {          
+        {
+            deathAudioSource.PlayOneShot(deathAudio, 0.5f);
             if (deathCurrentHeight <= deathMaxHeight && upOrDown == 1)
             {
                 deathCurrentHeight += 1;
@@ -137,6 +139,6 @@ public class PlayerDeath : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }

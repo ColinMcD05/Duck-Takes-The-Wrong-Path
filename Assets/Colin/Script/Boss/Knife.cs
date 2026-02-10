@@ -14,8 +14,12 @@ public class Knife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerDeath>().Death();
+            if (collision.gameObject.GetComponent<PlayerMovement>().inControl)
+            {
+                collision.gameObject.GetComponent<PlayerDeath>().Death();
+            }
             Destroy(this.gameObject);
+
         }
     }
 

@@ -10,6 +10,8 @@ public class PlayerStomp : MonoBehaviour
     [SerializeField] private Rigidbody2D playerRigidbody;
     [SerializeField] Animator playerAnimator;
     private GameManager gameManager;
+    [SerializeField] AudioSource audioPlayer;
+    [SerializeField] AudioClip hit;
 
     private float rayLength = 0.5f;
     private Vector2 playerBottom;
@@ -74,6 +76,7 @@ public class PlayerStomp : MonoBehaviour
                 }
                 //Debug.Log("Destroy Object.");
                 // Debug.Log(playerRigidbody.linearVelocityY);
+                audioPlayer.PlayOneShot(hit, 0.4f);
             }
             else
             {
@@ -83,7 +86,7 @@ public class PlayerStomp : MonoBehaviour
                     collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
                     gameObject.GetComponent<PlayerController>().SwitchPower("Small");
                 }
-                    gameObject.GetComponent<PlayerDeath>().Death();
+                gameObject.GetComponent<PlayerDeath>().Death();
             }
         }
     }

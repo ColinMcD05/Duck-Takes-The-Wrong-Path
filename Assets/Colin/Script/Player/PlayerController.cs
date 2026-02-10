@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public List<Sprite> sprite;
     [SerializeField] Animator playerAnimator;
     [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip growing;
 
     void Awake()
     {
@@ -22,6 +25,11 @@ public class PlayerController : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         SwitchPower(gameManager.playerLastPower);
+    }
+
+    void Update()
+    {
+
     }
 
     public void SwitchPower(string gainedPower)

@@ -9,6 +9,9 @@ public class PlayerPowers : MonoBehaviour
     public float invincibleTimer;
     [SerializeField] private PlayerController playerController;
     [SerializeField] Animator playerAnimator;
+    [SerializeField] AudioSource playerAudio;
+    [SerializeField] public AudioClip shrinking;
+    [SerializeField] AudioClip shooting;
 
 
     private void Update()
@@ -27,6 +30,7 @@ public class PlayerPowers : MonoBehaviour
 
     public void Shrink()
     {
+        playerAudio.PlayOneShot(shrinking, 0.5f);
         // Change Sprite to small and allow grow to spawn in
         if (playerController.currentPower == "Water")
         {
@@ -57,6 +61,7 @@ public class PlayerPowers : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1") && amountOfWater < 2 )
         {
+            playerAudio.PlayOneShot(shooting, 0.5f);
             Instantiate(waterBulletPrefab, transform.position + new Vector3(0.65f * bulletDirection, 0.12f, 0), Quaternion.identity);
             amountOfWater += 1;
             playerAnimator.SetTrigger("WaterPower");
