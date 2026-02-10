@@ -2,8 +2,25 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Ground
+  - Enemy
+  - Skeleton
+  - Wall
+  - Chest
+  - Crate
+  - Grow
+  - Water
+  - Invincible
+  - Bullet
+  - Mimic
+  - Boss
+  - Knife
+  - Lava
+  - Goblin
+  - MiniKnight
+  - Skull
   layers:
   - Default
   - TransparentFX
@@ -11,10 +28,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Enemy
+  - Breakables
+  - PowerUps
   - 
   - 
   - 
@@ -41,3 +58,5 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  m_RenderingLayers:
+  - Default
