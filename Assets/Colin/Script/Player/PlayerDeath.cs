@@ -63,7 +63,7 @@ public class PlayerDeath : MonoBehaviour
                 gameManager.lives -= 1;
                 playerController.ChangeSprite(playerController.sprite[5]);
                 GameObject.Find("Music").GetComponent<AudioSource>().Stop();
-                if (gameManager.lives == 0)
+                if (gameManager.lives <= 0)
                 {
                     playerMovement.inControl = false;
                     Invoke("RestartGame", 4f);
