@@ -65,10 +65,6 @@ public class ChestCrate : MonoBehaviour
             {
                 GameObject coinSpawned = Instantiate(coinPrefab, transform.position, Quaternion.identity);
                 coinSpawned.GetComponent<Coins>().fromCrate = true;
-                if (gameObject.CompareTag("Crate"))
-                {
-                    Break();
-                }
             }
             else
             {
