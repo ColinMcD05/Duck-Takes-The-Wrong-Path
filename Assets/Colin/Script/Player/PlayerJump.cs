@@ -51,7 +51,7 @@ public class PlayerJump : MonoBehaviour
 
     void Jump()
     {
-        jumpAudio.PlayOneShot(jump, 0.3f);
+        jumpAudio.PlayOneShot(jump, 0.1f);
         playerRigidbody.linearVelocity = new Vector2(playerRigidbody.linearVelocity.x, 0f);
         playerRigidbody.AddForce(Vector2.up * maxHeight, ForceMode2D.Impulse);
     }

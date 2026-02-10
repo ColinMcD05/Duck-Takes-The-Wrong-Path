@@ -89,38 +89,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5221775220661845467}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
---- !u!1 &2191667110902118201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
-  m_PrefabInstance: {fileID: 2980851678387762674}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5221775220661845467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2191667110902118201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505496e876bbe034190288080f72bb67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChestCrate
-  itemType: 
-  used: 0
-  move: 0
-  wormPrefab: {fileID: 0}
-  waterPrefab: {fileID: 0}
-  coinPrefab: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  chestSprites: []
-  invinciblePrefab: {fileID: 0}
-  chestAnimator: {fileID: 0}
 --- !u!4 &7655264830152336165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
@@ -181,38 +151,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2270803378304230389}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
---- !u!1 &911365306046341802 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
-  m_PrefabInstance: {fileID: 4292370817525096545}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2270803378304230389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911365306046341802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505496e876bbe034190288080f72bb67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChestCrate
-  itemType: 
-  used: 0
-  move: 0
-  wormPrefab: {fileID: 0}
-  waterPrefab: {fileID: 0}
-  coinPrefab: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  chestSprites: []
-  invinciblePrefab: {fileID: 0}
-  chestAnimator: {fileID: 0}
 --- !u!4 &8715444425917904566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
@@ -273,40 +213,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5568758192525505702}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
 --- !u!4 &3067584369495957167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4855700648284952279, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
   m_PrefabInstance: {fileID: 7633836356303603832}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6828746584321657523 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3977876315626259147, guid: 7a718d68d97050e4c966c03c5aa6b6d6, type: 3}
-  m_PrefabInstance: {fileID: 7633836356303603832}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5568758192525505702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6828746584321657523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505496e876bbe034190288080f72bb67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChestCrate
-  itemType: 
-  used: 0
-  move: 0
-  wormPrefab: {fileID: 0}
-  waterPrefab: {fileID: 0}
-  coinPrefab: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  chestSprites: []
-  invinciblePrefab: {fileID: 0}
-  chestAnimator: {fileID: 0}
