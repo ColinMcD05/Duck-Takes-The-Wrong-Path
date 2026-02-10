@@ -5,20 +5,20 @@ using System.Collections.Generic;
 public class MimicActivity : MonoBehaviour
 {
     private GameObject mimic;
-    private Vector3 scaleChange;
     private float timer;
     public bool stoodOn = false;
     public bool isOpen;
+    bool canMove;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        timer = 5f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (stoodOn == false)
+        if (stoodOn == false && canMove)
         {
             timer -= Time.deltaTime;
             if (!isOpen && timer == 0)
@@ -43,5 +43,17 @@ public class MimicActivity : MonoBehaviour
     {
         timer = 5f;
         isOpen = false;
+    }
+
+    private void OnBecameVisible()
+    {
+        canMove = true;
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if  (collision.gameObject.CompareTag("Player"))
+        {
+            stoodOn = false;
+        }
     }
 }
