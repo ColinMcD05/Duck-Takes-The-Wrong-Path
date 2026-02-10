@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class GoblinDeath : MonoBehaviour
 
 {
-
     [SerializeField] SpriteRenderer goblinSprite;
     public Sprite deathSprite;
     public bool isDead;
@@ -29,5 +28,6 @@ public class GoblinDeath : MonoBehaviour
     {
         transform.position += new Vector3(0f, -1f) * Time.deltaTime * 3f;
     }
+
 
 }

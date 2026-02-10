@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     public List<Sprite> sprite;
     [SerializeField] Animator playerAnimator;
+    [SerializeField] AudioSource audioSource;
 
     void Awake()
     {

@@ -7,10 +7,13 @@ public class Coins : MonoBehaviour
     public bool fromCrate;
     public float maxHeight;
     private float currentHeight;
+    private AudioSource audioSource;
+    [SerializeField] AudioClip coinClip;
 
     void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        audioSource = GameObject.Find("Audio").GetComponent<AudioSource>();
     }
 
     void Update()
@@ -28,6 +31,7 @@ public class Coins : MonoBehaviour
             gameManager.AddScore(200);
             gameManager.AddCoin(1);
             Destroy(this.gameObject);
+            audioSource.PlayOneShot(coinClip, 0.5f);        
         }
     }
 

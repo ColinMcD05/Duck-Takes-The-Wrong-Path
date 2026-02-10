@@ -18,6 +18,7 @@ public class PlayerDeath : MonoBehaviour
     public int upOrDown;
     [SerializeField] Animator playerAnimator;
     public float timer;
+    [SerializeField] AudioClip deathAudio;
 
     private void Awake()
     {

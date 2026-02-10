@@ -11,12 +11,14 @@ public class CameraController : MonoBehaviour
     private float top;
     private float topClamp;
     private float bottomClamp;
+    public float cameraBottom;
     public bool inControl;
 
     private void Awake()
     {
         inControl = true;
-        bottom = player.transform.position.y;
+        bottom = transform.position.y;
+        cameraBottom = transform.position.y;
         top = 16.23974f;
         topClamp = Camera.main.orthographicSize * 0.75f;
         bottomClamp = transform.position.y - 2;
@@ -48,9 +50,12 @@ public class CameraController : MonoBehaviour
             }
             else if (player.GetComponent<PlayerMovement>().playerRigidbody.position.y <= bottomClamp && transform.position.y >= bottom)
             {
-                cameraRigidbody.position += new Vector2(0f, 1f) * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
-                topClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
-                bottomClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
+                if (transform.position.y >= cameraBottom)
+                {
+                    cameraRigidbody.position += new Vector2(0f, 1f) * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
+                    topClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
+                    bottomClamp += 1f * Time.deltaTime * (player.GetComponent<Rigidbody2D>().linearVelocityY);
+                }
             }
         }
     }
