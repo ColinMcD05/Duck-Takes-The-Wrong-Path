@@ -13,6 +13,7 @@ public class SkeletonActions : MonoBehaviour
     private float halfHeight;
     private Vector2 movement;
     private bool isGrounded;
+    private GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,12 +22,13 @@ public class SkeletonActions : MonoBehaviour
         sb = GetComponent<Rigidbody2D>();
         ss = GetComponent<SpriteRenderer>();
         ss.flipX = direction == -1 ? false : true;
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !GameObject.Find("Player").GetComponent<PlayerDeath>().dead)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !player.GetComponent<PlayerDeath>().dead)
         {
             movement.x = speed * direction;
             movement.y = sb.linearVelocity.y;
@@ -37,7 +39,6 @@ public class SkeletonActions : MonoBehaviour
         else
         {
             sb.linearVelocity = new Vector2(0, 0);
-            gameObject.GetComponent<Animator>().enabled = false;
         }
     }
 

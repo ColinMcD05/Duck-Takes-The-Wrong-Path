@@ -11,6 +11,7 @@ public class GoblinMovement : MonoBehaviour
     private float halfWidth;
     private Vector2 movement;
     private bool canMove;
+    private GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,19 +19,20 @@ public class GoblinMovement : MonoBehaviour
         gb = GetComponent<Rigidbody2D>();
         gs = GetComponent<SpriteRenderer>();
         gs.flipX = direction == -1 ? false : true;
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !GameObject.Find("Player").GetComponent<PlayerDeath>().dead)
+        if (canMove && !gameObject.GetComponent<EnemyDeath>().dead && !player.GetComponent<PlayerDeath>().dead)
         {
             movement.x = speed * direction;
             movement.y = gb.linearVelocity.y;
             gb.linearVelocity = movement;
             SetDirection();
+            gameObject.GetComponent<Animator>().enabled = true;
         }
-
         else
         {
             gb.linearVelocity = new Vector2(0, 0);
