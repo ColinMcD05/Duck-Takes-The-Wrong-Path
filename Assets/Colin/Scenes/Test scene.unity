@@ -301,10 +301,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7473858131658536856, guid: bacfc3e13870390488247abd5512d20d, type: 3}
-      propertyPath: maxHeight
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 9054565656941504030, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.93
