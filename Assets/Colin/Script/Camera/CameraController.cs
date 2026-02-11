@@ -17,6 +17,7 @@ public class CameraController : MonoBehaviour
 
     private void Awake()
     {
+        Screen.SetResolution(1600, 900, true);
         inControl = true;
         bottom = transform.position.y;
         cameraBottom = transform.position.y;

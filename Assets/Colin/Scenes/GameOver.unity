@@ -452,7 +452,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8596513488105589408, guid: 23448023db33a8244ba88b3844b05afd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -473,7 +473,7 @@ Transform:
   m_GameObject: {fileID: 562906203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.070001125, y: -0.1, z: 0}
+  m_LocalPosition: {x: 0.070001125, y: 0.07, z: 0}
   m_LocalScale: {x: 1.679859, y: 1.679859, z: 1.679859}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -563,8 +563,8 @@ Transform:
   m_GameObject: {fileID: 1211375082}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.007270217, y: 1.69, z: 0}
-  m_LocalScale: {x: 1.2475, y: 1.2475, z: 1.2475}
+  m_LocalPosition: {x: 0.007270217, y: 3.4, z: 0}
+  m_LocalScale: {x: 0.92993635, y: 0.92993635, z: 0.92993635}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -581,6 +581,7 @@ GameObject:
   - component: {fileID: 1393331315}
   - component: {fileID: 1393331314}
   - component: {fileID: 1393331317}
+  - component: {fileID: 1393331318}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -706,6 +707,18 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1393331318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393331313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8addf1f2378adb94599b8ea04f251b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SetCamera
 --- !u!1 &1649346951
 GameObject:
   m_ObjectHideFlags: 0
