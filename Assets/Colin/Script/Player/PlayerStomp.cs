@@ -103,11 +103,11 @@ public class PlayerStomp : MonoBehaviour
                         Vector3 toOther = Vector3.Normalize(transform.position - collision.transform.position);
                         if (Vector3.Dot(forward, toOther) >= 0)
                         {
-                            collision.gameObject.GetComponent<SkullAction>().direction = 1;
+                            collision.gameObject.GetComponent<SkullAction>().direction = -1;
                         }
                         else
                         {
-                            collision.gameObject.GetComponent<SkullAction>().direction = -1;
+                            collision.gameObject.GetComponent<SkullAction>().direction = 1;
                         }
                     }
                     else
