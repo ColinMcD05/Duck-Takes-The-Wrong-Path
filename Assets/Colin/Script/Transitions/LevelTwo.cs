@@ -9,10 +9,14 @@ public class LevelTwo : MonoBehaviour
     private bool levelEnd;
     private float time;
     private GameManager gameManager;
+    private GameObject player;
+    private Camera mainCamera;
 
     private void Awake()
     {
         gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
+        player = GameObject.Find("Player");
+        mainCamera = Camera.main;
     }
 
     void Update()
@@ -33,7 +37,10 @@ public class LevelTwo : MonoBehaviour
         {
             gameManager.playerLastPower = collision.gameObject.GetComponent<PlayerController>().currentPower;
             collision.gameObject.GetComponent<PlayerMovement>().inControl = false;
-            boss.GetComponent<BossController>().canMove = false;
+            if (boss != null)
+            {
+                boss.GetComponent<BossController>().canMove = false;
+            }
             if (collision.gameObject.GetComponent<PlayerJump>().GetIsGrounded())
             {
                 collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
@@ -41,6 +48,7 @@ public class LevelTwo : MonoBehaviour
                 gameObject.GetComponent<Animator>().SetTrigger("Crank");
                 collision.gameObject.GetComponent<Animator>().SetBool("IsWalking", false);
                 collision.gameObject.GetComponent<Animator>().SetTrigger("Crank");
+                Destroy(GameObject.Find("BreakableFloor"));
             }
             Destroy(GameObject.Find("Enemies"));
             // Invoke("NextLevel", 5f);
@@ -49,15 +57,15 @@ public class LevelTwo : MonoBehaviour
 
     void TransitionMovement()
     {
-        if (GameObject.Find("Player").transform.position.x < 204.62f)
+        if (player.transform.position.x < 204.62f)
         {
-            GameObject.Find("Player").GetComponent<Animator>().SetBool("IsWalking", true);
-            GameObject.Find("Player").transform.position += new Vector3(1f, 0f) * Time.deltaTime * GameObject.Find("Player").GetComponent<PlayerMovement>().playerSpeed;
-            GameObject.Find("MainCamera").transform.position += new Vector3(1f, 0f) * Time.deltaTime * GameObject.Find("Player").GetComponent<PlayerMovement>().playerSpeed;
+            player.GetComponent<Animator>().SetBool("IsWalking", true);
+            player.transform.position += new Vector3(1f, 0f) * Time.deltaTime * GameObject.Find("Player").GetComponent<PlayerMovement>().playerSpeed;
+            mainCamera.transform.position += new Vector3(1f, 0f) * Time.deltaTime * GameObject.Find("Player").GetComponent<PlayerMovement>().playerSpeed;
         }
         else
         {
-            GameObject.Find("Player").GetComponent<Animator>().SetBool("IsWalking", false);
+            player.GetComponent<Animator>().SetBool("IsWalking", false);
             Invoke("NextLevel", 1f);
         }
     }
