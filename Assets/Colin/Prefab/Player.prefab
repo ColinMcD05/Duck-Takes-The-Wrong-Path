@@ -91,7 +91,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 50
   m_Sprite: {fileID: -3700192600834747682, guid: 745bbd5fb026aa34d9da70390c79d19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
   playerRigidbody: {fileID: 6680504850067125658}
-  maxHeight: 10.5
+  maxHeight: 11
   spriteRenderer: {fileID: 5895836147131981295}
   playerAnimator: {fileID: -8788749141476071375}
   jumpAudio: {fileID: 932126363574067337}

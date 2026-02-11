@@ -11,6 +11,7 @@ public class LevelTwo : MonoBehaviour
     private GameManager gameManager;
     private GameObject player;
     private Camera mainCamera;
+    [SerializeField] AudioClip levelEndAudio;
 
     private void Awake()
     {
@@ -24,7 +25,7 @@ public class LevelTwo : MonoBehaviour
         if (levelEnd)
         {
             time += Time.deltaTime;
-            if (time >= 0.2f)
+            if (time >= 1f)
             {
                 TransitionMovement();
             }
@@ -41,6 +42,9 @@ public class LevelTwo : MonoBehaviour
             {
                 boss.GetComponent<BossController>().canMove = false;
             }
+            GameObject.Find("Music").GetComponent<AudioSource>().Stop();
+            GameObject.Find("Music").GetComponent<AudioSource>().loop = true;
+            GameObject.Find("Music").GetComponent<AudioSource>().PlayOneShot(levelEndAudio, 1f);
             if (collision.gameObject.GetComponent<PlayerJump>().GetIsGrounded())
             {
                 collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
@@ -67,6 +71,14 @@ public class LevelTwo : MonoBehaviour
         {
             player.GetComponent<Animator>().SetBool("IsWalking", false);
             Invoke("NextLevel", 1f);
+        }
+    }
+
+    void BossMovement()
+    {
+        if (boss != null)
+        {
+            boss.transform.position -= new Vector3(0f, 1f) *Time.deltaTime * 10;
         }
     }
 

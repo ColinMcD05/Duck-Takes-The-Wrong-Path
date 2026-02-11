@@ -10,6 +10,7 @@ public class Lava : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerController>().SwitchPower("Small");
             collision.gameObject.GetComponent<PlayerDeath>().Death();
+            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
         }
         else
         {

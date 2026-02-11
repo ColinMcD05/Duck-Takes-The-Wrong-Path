@@ -43,7 +43,6 @@ public class BossController : MonoBehaviour
             }
             else
             {
-                enemyAnimator.SetBool("IsWalking", false);
                 JumpMovement();
             }
         }
@@ -84,7 +83,6 @@ public class BossController : MonoBehaviour
             enemyRigidbody.position += new Vector2(0.5f, 0f) * Time.deltaTime * speed/2 * moveDirection;
             moveTimer -= Time.deltaTime;
         }
-        enemyAnimator.SetBool("IsWalking", true);
     }
 
     void Throw()
