@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5790199957722325503}
   - component: {fileID: 2943207261730578689}
   - component: {fileID: 399667914240572030}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Mimic
   m_TagString: Mimic
   m_Icon: {fileID: 0}

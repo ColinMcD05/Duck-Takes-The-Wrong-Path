@@ -12,7 +12,8 @@ public class MimicActivity : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        timer = 5f;
+        timer = 2.5f;
+        isOpen = false;
     }
 
     // Update is called once per frame
@@ -35,7 +36,7 @@ public class MimicActivity : MonoBehaviour
 
     void Open()
     {
-        timer = 3f;
+        timer = 2.5f;
         isOpen = true;
     }
 

@@ -66,10 +66,6 @@ public class ChestCrate : MonoBehaviour
                 GameObject coinSpawned = Instantiate(coinPrefab, transform.position, Quaternion.identity);
                 coinSpawned.GetComponent<Coins>().fromCrate = true;
             }
-            else
-            {
-                Break();
-            }
         }
         chestAnimator.SetBool("Hit", true);
         empty = true;
@@ -98,12 +94,5 @@ public class ChestCrate : MonoBehaviour
             transform.localScale += new Vector3(1f, 1f) * moveDirection * Time.deltaTime;
             currentPosition += 0.1f * moveDirection * Time.deltaTime * 15f;
         }
-    }
-
-    public void Break()
-    {
-        chestAnimator.SetTrigger("Break");
-        Destroy(this.gameObject, 0.5f);
-        gameObject.GetComponent<Collider2D>().isTrigger = true;
     }
 }

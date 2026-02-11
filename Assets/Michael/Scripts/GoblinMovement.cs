@@ -10,7 +10,7 @@ public class GoblinMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer gs;
     private float halfWidth;
     private Vector2 movement;
-    private bool canMove;
+    public bool canMove;
     private GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -291,6 +291,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -593,6 +594,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -717,6 +719,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -902,6 +905,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -1522,6 +1526,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -2630,6 +2635,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -3073,6 +3079,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -3105,6 +3112,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -3265,6 +3273,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -3297,6 +3306,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -3466,6 +3476,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -3718,6 +3729,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -4367,6 +4379,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -4536,6 +4549,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -4637,6 +4651,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -5337,6 +5352,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -5464,6 +5480,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -6548,6 +6565,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -6580,6 +6598,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -7113,6 +7132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mimic (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 443081044096716063, guid: 90b7fe5c066e41b49a13fe8dc0b72c6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1521436989769179672, guid: 90b7fe5c066e41b49a13fe8dc0b72c6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.64
@@ -7389,6 +7412,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -7549,6 +7573,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -7801,6 +7826,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -7909,6 +7935,10 @@ PrefabInstance:
     - target: {fileID: 443081044096716063, guid: 90b7fe5c066e41b49a13fe8dc0b72c6a, type: 3}
       propertyPath: m_Name
       value: Mimic
+      objectReference: {fileID: 0}
+    - target: {fileID: 443081044096716063, guid: 90b7fe5c066e41b49a13fe8dc0b72c6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1521436989769179672, guid: 90b7fe5c066e41b49a13fe8dc0b72c6a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8108,6 +8138,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -8405,6 +8436,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -8845,7 +8877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88.20001, y: 0}
+  m_AnchoredPosition: {x: 88.203125, y: 0}
   m_SizeDelta: {x: 88.20001, y: 27.339996}
   m_Pivot: {x: 1, y: 1}
 --- !u!1001 &905489027
@@ -8965,6 +8997,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -9217,6 +9250,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -9386,6 +9420,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -9820,6 +9855,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -9916,7 +9952,7 @@ Transform:
   m_GameObject: {fileID: 968686478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -3.26, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9980,6 +10016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   player: {fileID: 567967319}
   cameraRigidbody: {fileID: 968686484}
+  topClamp: 0
   cameraBottom: 0
   inControl: 0
 --- !u!50 &968686484
@@ -10180,6 +10217,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -10796,6 +10834,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -10932,6 +10971,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -11092,6 +11132,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -11321,6 +11362,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -11353,6 +11395,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -11410,7 +11453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9054565656941504030, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.78
+      value: -10.95
       objectReference: {fileID: 0}
     - target: {fileID: 9054565656941504030, guid: bacfc3e13870390488247abd5512d20d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11606,6 +11649,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -12222,6 +12266,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -13096,6 +13141,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -13133,6 +13179,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -13165,6 +13212,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -13325,6 +13373,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -14100,6 +14149,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -14309,6 +14359,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -14474,6 +14525,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -14634,6 +14686,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -14794,6 +14847,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -14826,6 +14880,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -16027,7 +16082,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -33.4, y: 0}
+  m_AnchoredPosition: {x: -33.40625, y: 0}
   m_SizeDelta: {x: 88.20001, y: 27.339996}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &1444473509
@@ -16196,6 +16251,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -16529,6 +16585,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -17462,6 +17519,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -18067,6 +18125,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -18358,6 +18417,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -18747,6 +18807,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -18779,6 +18840,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -19036,6 +19098,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -19366,6 +19429,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -19677,6 +19741,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -19837,6 +19902,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -20381,6 +20447,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -20541,6 +20608,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -20706,6 +20774,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -20880,6 +20949,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -21419,6 +21489,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -21579,6 +21650,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -21848,6 +21920,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -22915,6 +22988,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -23075,6 +23149,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -23107,6 +23182,7 @@ MonoBehaviour:
   itemType: 
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
@@ -23682,6 +23758,7 @@ MonoBehaviour:
   itemType: Coin
   used: 0
   move: 0
+  empty: 0
   wormPrefab: {fileID: 0}
   waterPrefab: {fileID: 0}
   coinPrefab: {fileID: 5692873377949203021, guid: 3698eccfeafbb144594e3a8c276fd0c6, type: 3}
